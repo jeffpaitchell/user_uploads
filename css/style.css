@@ -1,0 +1,3297 @@
+body {
+	overflow:auto;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	background-color:#FFF;
+
+}
+
+html {
+	overflow:scroll;
+}
+
+li {
+	list-style:none;
+}
+
+header {
+	display:block;
+	margin:0;
+}
+
+#wrapper {
+    padding-left: 0px;
+    transition: all .4s ease 0s;
+    height: 100%
+}
+
+#wrapper.active {
+    padding-left:0;
+}
+
+#outterwrapper {
+	width:1610px; 
+	height:100%;
+	min-height:100%; /*Need this line in order for your footer to stay at the bottom */ 
+	padding:0; 
+	margin:0 auto;
+	overflow:hidden;
+}
+
+/* Begin Academy Nav Styles */
+
+.body_container {
+	width:75%; 
+	max-width:1250px;
+	overflow:auto;
+	margin:30px auto;
+	/* background: -webkit-linear-gradient(#FFF, #3BC6D0); */ /* For Safari and Chrome */
+	/* background: -o-linear-gradient(#FFF, #3BC6D0); */ /* For Opera */
+	/* background: -moz-linear-gradient(#FFF, #3BC6D0); */ /* For Firefox */
+	/* background: linear-gradient(#FFF, #3BC6D0); */ /* Standard Syntax */
+	/* background-color: #E2E4EB; */
+}
+
+.body_container h1 {
+	text-align:center;
+	font-size:28px;
+}
+
+.home_video_container,
+.video_library_grey_container {
+	width:100%;
+	max-width:1250px;
+	overflow:auto;
+	/* background-color: #E2E4EB; */
+	/* background-image: url("../images/grey_background.jpg"); */
+	background-repeat: no-repeat;
+	/* background-size:1250px 520px ; */
+	margin-bottom:20px;
+}
+
+.home_video_container {
+	/* background-size:1250px 520px ; */ /* jeff -> Changed 2/10/2016 */
+}
+
+.video_library_grey_container {
+	/* background-size:1250px 815px ; */ /* jeff -> Changed 6/9/2016 */	
+	background-size:1250px 2000px;
+	background-image: url("../images/grey_background.jpg");
+}
+
+.home_video_container h1 {
+	text-align:center;
+	font-size:28px;
+}
+
+.users_container {
+	width:75%; 
+	max-width:1250px;
+	overflow:auto;
+	margin:30px auto;
+	background:transparent;
+}
+
+.users_container h1 {
+	text-align:center;
+	font-size:28px;
+}
+
+.users_container_column {
+	width:50%;
+	margin:10px auto;
+	font-size:16px;
+}
+
+.users_container_column h1 {
+	text-align:center;
+	font-size:28px;
+}
+
+.users_container_column li {
+	list-style:decimal-leading-zero;
+}
+
+#admin_logout_button {
+	display:block;
+	margin:0 auto;
+	/* Jeff -> Changed 2/26/16 */
+	width:100px;
+	/* float:left; */
+	/* margin-right:20px; */
+}
+
+#admin_users_block_button {
+	display:block;
+	margin:0 auto;
+	width:150px;
+}
+
+#admin_users_table_button {
+	display:block;
+	margin:0 auto;
+	width:150px;
+}
+
+.certified_buttons_container {
+	display:inline-block;
+	float:right;
+	overflow:auto;
+	width:40%;
+}
+
+.certified_buttons_image_container {
+	display:inline-block;
+	float:left;
+	overflow:auto;
+	width:50%;
+}
+
+#certified_learn_more {
+	width:160px;
+	height:auto;
+	overflow:auto;
+	float:right;
+	margin-top:15px;
+}
+
+#certified_geek_pin {
+	width:220px;
+	height:auto;
+	overflow:auto;
+	margin-top:-15px;
+}
+
+.form_container {
+	width:100%;
+	overflow:hidden;
+	background-color:#FFF;
+	/* border:1px solid #D1D1D1; */ /* jeff */
+}
+
+/* Begin Admin Login Box Styles */
+
+.form-title {
+	background-color:#1abc9c;
+	border-radius:5px 5px 0 0;
+	border-bottom:5px solid #299A7C;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	text-transform:Uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.form-title h1 {
+	color:#FFF;
+	/* margin-top:10px; */
+	/* margin-left:20px; */
+}
+
+.form-class {
+	/* border:1px solid #D1D1D1; */
+	border-radius:5px;
+	font-family:'Open Sans', sans-serif;
+	margin-top:20px;
+	margin-bottom:20px;
+	background-color:#FFFFFF;
+	padding-bottom:15px;
+	box-shadow:3px 3px 5px 6px #CCC;
+}
+
+.form-group {
+	width:55%;
+	margin:10px auto;
+}
+
+.admin_buttons_container {
+	/* width:50%; */ 
+	width:75%; /* jeff -> Changed 6/27/16 */
+	margin:0 auto;
+	height:auto;
+	overflow:auto;
+}
+
+.admin_logout_button_container,
+.admin_users_button_container {
+	display:inline-block;
+	overflow:auto;
+}
+
+.admin_logout_button_container {
+	width:20%;
+}
+
+.admin_users_button_container {
+	width:30%;
+}
+
+/* Jeff -> Added buttons containers */
+
+/*
+#AGREE {
+	float:left;
+}
+*/
+
+#QuestionSet0,
+#QuestionSet1,
+#QuestionSet2,
+#QuestionSet3,
+#QuestionSet4,
+#QuestionSet5,
+#QuestionSet6,
+#QuestionSet7 {
+	box-shadow:none;
+}
+
+#QuestionSet1,
+#QuestionSet2,
+#QuestionSet3,
+#QuestionSet4,
+#QuestionSet5,
+#QuestionSet6,
+#QuestionSet7 {
+	box-shadow:none;
+	background-color:rgb(240,240,240);
+}
+
+/* End Admin Login Box Styles */
+
+.welcome_box {
+	border: 1px solid #000; 
+	padding: 10px; 
+	width: 40%; 
+	height: auto; 
+	background-color: #0E9A8E; 
+	font-size: 16px; 
+	margin: auto;  
+	margin-bottom: 20px;
+	font-family:"Roboto", Helvetica, Arial, sans-serif;
+	color:#FFF;
+
+}
+
+.test_row {
+	margin-top:0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	width:100%;
+	overflow:auto;
+}
+
+.radio_container {
+	margin-bottom:20px;
+}
+
+.about_us_container,
+.contact_us_container {
+	width:75%;
+	max-width:1250px;
+	overflow:auto;
+	margin-top:0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+}
+
+.about_us_container h1,
+.contact_us_container h1 {
+	text-align:center;
+	font-size:28px;
+}
+
+.about_us_image_container {
+	width:60%;
+	display:inline-block;
+	float:left;
+	overflow:auto;
+	height:auto;
+}
+
+.about_us_image_container img {
+	width:500px;
+	height:auto;
+	display:block;
+	margin:10px auto;
+}
+
+.about_us_text_container {
+	width:40%;
+	display:inline-block;
+	float:left;
+	overflow:auto;
+}
+
+.about_us_text_container h1 {
+	text-align:center;
+	font-size:24px;
+}
+
+.about_us_text_container p {
+	font-size:20px;
+	line-height:1.5;
+}
+
+.contact_us_image_container {
+	width:100%;
+	display:block;
+	overflow:auto;
+	height:auto;
+}
+
+.contact_us_image_container img {
+	width:725px;
+	height:auto;
+	display:block;
+	margin:10px auto;
+}
+
+.contact_us_text_container {
+	width:100%;
+	display:block;
+	overflow:auto;
+	text-align:center;
+	margin-top:15px;
+}
+
+.contact_us_text_container h1 {
+	/* text-align:center; */
+	font-size:24px;
+}
+
+.contact_us_text_container p {
+	font-size:20px;
+	line-height:1.5;
+}
+
+.geek_pin_big_container {
+	width:100%;
+	overflow:auto;
+	height:auto;
+	margin:10px auto;
+}
+
+.geek_pin_big_container img {
+	width:70%;
+	max-width:500px;
+	height:auto;
+	margin:0 auto;
+	display:block;
+}
+
+.mission_accomplished_container {
+	width:100%;
+	overflow:auto;
+	height:auto;
+	margin:10px auto;
+}
+
+.mission_accomplished_container img {
+	width:70%;
+	max-width:400px;
+	height:auto;
+	margin:0 auto;
+	display:block;
+}
+
+.academy_menu_wrapper {
+	display:block;
+	width:100%;
+	overflow:auto;
+	margin:0 auto;
+}
+
+#academy_menu {
+	background-color:transparent;
+	margin-bottom:0px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:auto;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	width:1150px;
+	height:70px;
+}
+
+.home_button,
+.about_us_button,
+.educational_programs_button,
+.certification_button,
+.calendar_button,
+.faq_button,
+.contact_button
+{
+	display:inline-block;
+	overflow:auto;
+}
+
+.home_button {
+	width:175px;
+}
+
+.about_us_button {
+	width:175px;
+	margin-left:-10px;
+}
+
+.educational_programs_button {
+	width:251px;
+	margin-left:-11px;
+}
+
+.certification_button {
+	width:175px;
+	margin-left:-10px;
+}
+
+.calendar_button {
+	width:175px;
+	margin-left:-10px;
+}
+
+.faq_button {
+	width:175px;
+	margin-left:-10px;
+}
+
+.contact_button {
+	width:175px;
+	margin-left:-10px;
+}
+
+.home_button a,
+.about_us_button a,
+.educational_programs_button a,
+.certification_button a,
+.calendar_button a,
+.faq_button a,
+.contact_button a
+ {
+	float:left;
+	margin-top:0px;
+	padding:10px 0px;
+	display:block;
+	text-decoration:none;
+	overflow:auto;
+}
+
+a.home_darken,
+a.about_us_darken,
+a.educational_programs_darken,
+a.certification_darken,
+a.calendar_darken,
+a.faq_darken,
+a.contact_darken {
+	display:inline-block;
+}
+
+a.about_us_darken {
+	background: url("../images/about_us_new.png");
+	background-repeat:no-repeat;
+	background-size:175px 41px; 
+	width:175px;
+	height:41px;
+}
+
+a.home_darken {
+	background: url("../images/home_new.png");
+	background-repeat:no-repeat;
+	background-size:175px 41px; 
+	width:175px;
+	height:41px;
+}
+
+a.educational_programs_darken {
+	background: url("../images/training_videos_new.png");	
+	background-repeat:no-repeat;
+	background-size:251px 41px; 
+	width:251px;
+	height:41px;
+}
+
+a.certification_darken {
+	background: url("../images/certification_test_new.png");
+	background-repeat:no-repeat;
+	background-size:175px 41px; 
+	width:175px;
+	height:41px;
+}
+
+a.calendar_darken {
+	background: url("../images/calendar_new.png");
+	background-repeat:no-repeat;
+	background-size:175px 41px; 
+	width:175px;
+	height:41px;
+}
+
+a.faq_darken {
+	background: url("../images/faq.png");
+	background-repeat:no-repeat;
+	background-size:175px 41px; 
+	width:175px;
+	height:41px;
+}
+
+a.contact_darken {
+	background: url("../images/contact_new.png");
+	background-repeat:no-repeat;
+	background-size:175px 41px; 
+	width:175px;
+	height:41px;
+}
+
+a.home_darken,
+a.home_darken:hover,
+a.about_us_darken,
+a.about_us_darken:hover,
+a.educational_programs_darken,
+a.educational_programs_darken:hover,
+a.certification_darken,
+a.certification_darken:hover,
+a.calendar_darken,
+a.calendar_darken:hover,
+a.faq_darken,
+a.faq_darken:hover,
+a.contact_darken,
+a.contact_darken:hover
+
+ {
+ 	/*
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    */
+}
+
+a.home_darken:hover {
+    background: url("../images/home_new_dark.png");
+    background-repeat:no-repeat;
+    background-size:175px 41px; 
+}
+
+a.about_us_darken:hover {
+    background: url("../images/about_us_new_dark.png");
+    background-repeat:no-repeat;
+    background-size:175px 41px; 
+}
+
+a.educational_programs_darken:hover {
+    background: url("../images/training_videos_new_dark.png");
+    background-repeat:no-repeat;
+    background-size:251px 41px; 
+}
+
+a.certification_darken:hover {
+    background: url("../images/certification_test_new_dark.png");
+    background-repeat:no-repeat;
+    background-size:175px 41px; 
+}
+
+a.calendar_darken:hover {
+    background: url("../images/calendar_new_dark.png");
+    background-repeat:no-repeat;
+    background-size:175px 41px; 
+}
+
+a.faq_darken:hover {
+    background: url("../images/faq_dark.png");
+    background-repeat:no-repeat;
+    background-size:175px 41px; 
+}
+
+a.contact_darken:hover {
+    background: url("../images/contact_new_dark.png");
+    background-repeat:no-repeat;
+    background-size:175px 41px; 
+}
+
+.academy_logo_container {
+	width:100%;
+	max-width:1150px;
+	overflow:auto;
+	height:auto;
+	margin:20px auto;
+}
+
+.academy_logo_row {
+	margin-left:0px;
+	margin-right:0px;
+	width:100%;
+	overflow:auto;	
+}
+
+.academy_logo_image_left {
+	display:inline-block;
+	float:left;
+	overflow:auto;
+}
+
+.academy_logo_image_left,
+.academy_logo_image_right
+ {
+	background:none;
+	border:0;
+	margin-bottom:0;
+	padding-bottom:0;
+	padding-left:0;
+	padding-right:0;
+}
+
+.academy_logo_image_left {
+	float:none;
+	width:50%;
+	max-width:700px;
+	margin:0 auto;
+	display:block;
+}
+
+.academy_logo_image_right {
+	float:left;
+	width:40%;
+	max-width:521px;
+	height:auto;
+	margin-top:35px;
+	margin-left:30px;
+}
+
+.academy_logo_image_left img,
+.academy_logo_image_right img {
+	display:block;
+	margin:0;
+	max-width:100% !important;
+	height:auto;
+}
+
+#online_istep_text {
+	width:80%;
+}
+
+.screen_container {
+	width:100%;
+	/* max-width:1150px; */
+	overflow:auto;
+	height:auto;
+	/* margin:20px auto; */
+	/* margin-top:20px; */ /* jeff -> Changed 2/10/2016 */
+	margin-top:0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+}
+
+.screen_container h1 {
+	text-align:center;
+	font-size:24px;
+}
+
+.screen_row {
+	margin-left:auto;
+	margin-right:auto;
+	/* margin-top:50px; */ /* jeff -> Changed 2/3/16 */
+	margin-top:0;
+	width:100%;
+	overflow:auto;	
+
+}
+
+.screen_image_left {
+	display:inline-block;
+    float:left; 
+	/* overflow:auto; */ /* jeff-> Changed 6/9/2016 */
+	overflow:hidden;
+	height:480px;
+
+	/* background:url(/media/wysiwyg/cms_pages/aetrex_academy/screen_fixed.png); */
+	/* background-size:521px 351px; */
+	/* background-repeat:no-repeat; */
+}
+
+.screen_image_left,
+.screen_image_right,
+.academy_videos_container
+ {
+	border: 0;
+	margin-bottom:0; 
+	padding-bottom:0;
+	padding-left:0;
+	padding-right:0;
+}
+
+.screen_image_left {
+/* 	float:left;
+	width:50%;
+	max-width:700px;
+	margin-left:50px; */
+	/* height:auto; */ /*jeff -> Changed on 6/9/2016 */
+	height:480px;
+	/* width:55%; */ /* jeff -> Changed on 2/3/16 */
+	width:65%;
+	margin-top:18px;
+}
+
+.certification_video_container {
+	display:inline-block;
+	overflow:auto;
+	width:100%;
+	height:auto;
+}
+
+#other {
+	display:block;
+	width:560px;
+	margin:0 auto;
+	height:auto;
+	background-color: rgb(240,240,240);
+	overflow:auto;
+}
+
+.screen_image_right,
+.academy_videos_container
+ {
+	background:none;
+	float:left;
+	/* width:40%; */ 
+	max-width:521px;
+	width:30%; /* jeff -> Added this 2/8/16 */
+	height:auto;
+	/* margin-top:15px; */
+	/* margin-top:0; */ /* jeff -> Changed 2/3/16 */
+	/* margin-top:15px; */ /* jeff -> Changed 2/3/16 */
+	/* margin-left:45px; */ /* jeff -> Changed 2/3/16 */
+	/* margin-left:5px; */
+}
+
+.academy_videos_container {
+	margin-top:0;
+	margin-left:45px;
+}
+
+.screen_image_right {
+	margin-top:15px;
+	margin-left:52px;
+}
+
+.screen_image_right {
+	/* width:35%; */ /* jeff -> Changed 2/3/16 */
+	/* width:25%; */ /* jeff -> Changed 2/3/16 */
+	width:30%;
+}
+
+.academy_videos_container h1 {
+	text-align:center;
+	margin-top:-3px;
+}
+
+/* jeff -> Added this 'flag buttons' container 
+for videos with language captions */
+
+/* Begin Video Captions Section */
+
+.language_captions_container {
+	display:inline-block;
+    float:left; 
+	overflow:auto;
+	height:480px;
+	width:650px;
+	margin-top:18px;
+	/* Set 'display' default to none */
+	/* display:none; */
+}
+
+.language_captions_video {
+	height:480px;
+	width:90%;
+	float:left;
+	margin-left:50px;
+	display:block;
+	border-top: solid 5px #000;
+	border-bottom: solid 5px #000; 
+	border-left:solid 5px #000;
+	border-right:solid 5px #000;
+	overflow:hidden;
+}
+
+/* End Video Captions Section */
+
+/* Begin Flags Container Section */
+
+.language_flags_container {
+	display:block;
+	margin:0 auto;
+	overflow:auto;
+}
+
+.language_flags_container1 {
+	display:block;
+	margin:0 auto;
+	overflow:auto;
+}
+
+.language_flags_container_row {
+	margin:0 auto;
+	width:60%;
+	overflow:auto;
+}
+
+.language_flags_button {
+	display:inline-block;
+	float:left;
+	margin-left:10px;
+}
+
+.language_flags_button_container {
+	border:none;
+	background:transparent;
+}
+
+.language_flags_button img {
+	display:block;
+	margin:0 auto;
+	width:50px;
+}
+
+/* End Flags Container Section */
+
+/* Begin Captions Instructions Section */
+
+.captions_instructions {
+	width:60%;
+	overflow:auto;
+	padding:10px;
+}
+
+.captions_instructions h1 {
+	text-align:center;
+	font-size:22px;
+}
+
+.captions_instructions img {
+	display:inline-block;
+	width:25px;
+
+}
+
+/* End Captions Instructions Section */
+
+
+.screen_image_left img,
+.screen_image_right img {
+	display:block;
+	margin:0;
+	max-width:100% !important;
+	height:auto;
+}
+
+.screen_image_right_image_container {
+	width:100%;
+	margin-bottom:15px;
+	margin-top:15px;
+	margin-left:0;
+}
+
+.screen_image_right_image_container img {
+	max-width:560px;
+	width:90%;
+}
+
+.screen_image_right_ask_the_experts {
+	width:80%;
+	margin-top:25px;
+	margin-right:-10px;
+	margin-bottom:10px;
+	float:right;	
+}
+
+.certified_fitter_container {
+	width:100%;
+	overflow:hidden;
+}
+
+.certified_fitter_container img {
+	width:100%;
+	display:block;
+	height:auto;
+}
+
+/* Jeff -> Added on 3/9/16 */
+.audio_row {
+	width:100%;
+	clear:both;
+	height:80px;
+}
+
+/* Jeff -> Added on 3/4/16 */
+.audio_container {
+	width:220px;
+	height:60px;
+	display:block;
+	margin-top:20px;
+	float:right;
+}
+
+/* Begin Button Styles for Academy Intro Audio */
+
+#academy_audio_button {
+
+	background-repeat:no-repeat;
+	background-size:50px 50px;
+	width:55px;
+	height:55px;
+	display:inline-block;
+	float:none;
+}
+
+/* End Button Styles for Academy Intro Audio */
+
+.certified_fitter_start_here {
+	width:220px;
+	height:60px;
+	display:block;
+	/* margin-top:20px; */
+	margin-top:-100px; /* Jeff -> Changed 3/9/16 */
+	margin-right:55px;
+	float:right;
+}
+
+.certified_fitter_start_here a {
+	width:220px;
+	height:60px;
+	display:block;
+	overflow:auto;
+	position:relative;
+}
+
+.grey_box_container {
+	width:100%;
+	/* max-width:1150px; */
+	overflow:auto;
+	/* height:450px; */ /* jeff -> Changed 2/3/16 */
+	/* height:500px; */ /* jeff -> Changed 2/4/16 */
+	height:430px;
+	/* margin:20px auto; */
+	margin-top:-5px;
+	margin-left:auto;
+	margin-right:auto;
+	/* margin-bottom:20px; */ /* jeff -> Changed 2/4/16 */
+	margin-bottom:0;
+	overflow:hidden;
+
+}
+
+.home_information_left {
+	width:60%;
+	/* height:400px; */ /* jeff -> Added 2/3/16 */
+	margin:20px auto;
+	float:left;
+	display:inline-block;
+}
+
+.home_information_left img {
+	width:100%;
+	height:412px;
+}
+
+.home_information_right {
+	width:40%;
+	margin:20px auto;
+	float:left;
+	display:inline-block;
+}
+
+.home_information_right_image_container {
+	width:100%;
+	margin-top:0;
+	margin-bottom:15px;
+}
+
+.home_information_right_image_container img {
+	/* width:95%; */
+	/*
+	margin-top:0;
+	margin-left:25px;
+	padding-left:10px;
+	padding-bottom:5px;
+	*/
+	/* width:90%; */
+	width:95%;
+	margin-left:25px;
+	display:block;
+}
+
+.grey_box_link_calendar {
+	width:100%;
+	height:200px;
+	margin-top:-413px;
+}
+
+.grey_box_link_calendar a {
+	display:block;
+	width:100%;
+	height:200px;
+	overflow:auto;
+	position:relative; /* Need this property for link to be placed
+	over image properly */
+}
+.grey_box_link_certification {
+	width:100%;
+	height:200px;
+	margin-top:14px;
+}
+
+.grey_box_link_certification a {
+	display:block;
+	width:100%;
+	height:200px;
+	overflow:auto;
+	position:relative; /* Need this for link to be placed
+	over image properly */
+}
+
+#certification_userfields_container{
+	display:block; 
+	width:650px; 
+	height:auto; 
+	margin: auto; 
+	background-color:#fff;
+	overflow:auto;
+}
+/*
+.grey_box_link_calendar,
+.grey_box_link_certification {
+	display:block;
+	position:absolute;
+}
+*/
+
+/* Responsive Styles for Grey Boxes */
+
+/*
+.grey_box_link_calendar {
+	top:50px;
+	right:1250px;
+	width:475px;
+}
+*/
+
+/*
+.screen_image_right_ask_the_experts img {
+	width:70%;
+}
+*/
+
+
+
+
+.thirty_seconds {
+	text-align:center;
+	color:#000;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	display:inline-block;
+	clear:both;
+	width:100%;
+	margin-top:10px;
+}
+.thirty_seconds h2 {
+	font-size:32px;
+}
+
+#user_logout {
+	display:block;
+	margin:10px auto;
+	width:280px;
+
+}
+
+.aetrex_video {
+/*	width:475px;
+	height:316px; */ /* vin */
+	/* height:480px; */
+	/* height:380px; */ /* jeff */
+	/* height:360px; */ /* jeff -> Changed 2/3/16 */
+	height:430px;
+	float:left;
+	margin-left:50px;
+	/* margin:0 auto; */
+	display:block;
+	/*
+	border-top: solid 5px #0E9A8E;
+	border-bottom: solid 5px #0E9A8E; 
+	border-left:solid 5px #0E9A8E;
+	border-right:solid 5px #0E9A8E;
+	*/
+
+	border-top: solid 5px #000;
+	border-bottom: solid 5px #000; 
+	border-left:solid 5px #000;
+	border-right:solid 5px #000;
+}
+
+.certification_video {
+	height:380px;
+	display:block;
+	margin:10px auto;
+	border-top: solid 5px #0E9A8E;
+	border-bottom: solid 5px #0E9A8E;	
+}
+
+.ask_the_experts_button {
+	display:block;
+	overflow:auto;
+	width:287px;
+}
+
+.ask_the_experts_button:hover {
+	opacity:0.5;
+}
+
+/*
+#istep_training,
+#calendar_training_text,
+#cap_logo
+{
+	width:75%;
+	margin-bottom:13px;
+}
+*/
+
+#istep_training {
+	width:300px;
+	height:auto;
+}
+
+#cap_logo {
+	margin-bottom:30px;
+	width:300px;
+}
+
+#istep_training {
+	display:block;
+	margin:10px auto;
+}
+
+#calendar_training_text {
+	display:block;
+	margin:10px auto;
+}
+
+.experts_container {
+	width:100%;
+	max-width:1150px;
+	overflow:auto;
+	height:auto;
+	margin:20px auto;
+}
+
+.experts_row {
+	margin-left:0px;
+	margin-right:0px;
+	width:100%;
+	overflow:auto;	
+}
+
+.experts_image_left {
+	display:inline-block;
+	float:left;
+	overflow:auto;
+}
+
+.experts_image_left,
+.experts_image_right
+ {
+	background:none;
+	border:0;
+	margin-bottom:0;
+	padding-bottom:0;
+	padding-left:0;
+	padding-right:0;
+}
+
+.experts_image_left {
+	float:left;
+	width:50%;
+	max-width:700px;
+	/* margin-left:50px; */ /* jeff */
+	/* margin-top:0px; */ /* jeff */
+	margin-left:0px;
+	margin-top:100px;
+}
+
+.experts_image_right {
+	float:left;
+	width:20%;
+	max-width:521px;
+	height:auto;
+	margin-top:10px;
+	margin-left:30px;
+	margin-bottom:0px;
+}
+
+#learn_more_text {
+	margin-left:75px;
+}
+
+#learn_service_text {
+	display:block;
+	margin:10px auto;
+	width:500px;
+	height:auto;
+}
+
+#geek_pin {
+	margin-top:0 !important;
+}
+
+#geek_pin_image {
+	width:220px;
+	height:230px;
+	margin-top:-12px;
+	margin-left:-17px;
+}
+
+.experts_image_left img,
+.experts_image_right img {
+	display:block;
+	margin:0;
+	max-width:100% !important;
+	height:auto;
+}
+
+.main-container {
+	max-width:1250px !important;
+}
+
+.academy_coming_soon_text,
+.academy_about_us_text,
+.academy_contact_us_text {
+	/* text-align:center; */
+	color:#000 !important;
+	height:200px;
+}
+
+.academy_coming_soon_text {
+	height:200px;
+}
+
+.academy_about_us_text {
+	height:auto;
+	margin-top:80px;
+	margin-bottom:20px;
+}
+
+.academy_contact_us_text {
+	height:130px;
+	margin-top:80px;
+	margin-bottom:20px;
+}
+
+.academy_coming_soon_text h1,
+.academy_about_us_text h1,
+.academy_contact_us_text h1, {
+	color:#000 !important;
+	font-family:"Helvetica Neue", Verdana, Arial, sans-serif !important;
+	margin-top:20px;
+	font-size:40px;
+	text-align:center;
+}
+
+.academy_about_us_text p,
+.academy_contact_us_text p {
+	color:#000 !important;
+	font-family:"Helvetica Neue", Verdana, Arial, sans-serif !important;
+	margin:10px 0 10px 0;
+	font-size:20px !important;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+
+/* Begin Academy Video Button Styles */
+
+.academy_button {
+	display:block;
+	background-color:#21AF50;
+	color:#FFF;
+	/* width:400px; */ /* jeff -> Changed 2/8/16 */
+	width:360px;
+	height:60px;
+	border-radius:5px;
+	border:2px solid #FFF;
+	margin:10px auto;
+	font-family:"Helvetica Neue", Verdana, Arial, sans-serif;
+	/* font-size:20px; */
+	font-size:16px; /* jeff */
+	-webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+    padding:5px;
+
+}
+
+.academy_button:hover {
+	cursor:pointer;
+	opacity:0.5;
+	-webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+/* End Academy Video Button Styles */
+
+/* Begin Academy Calendar styles */
+
+.calendar_container {
+	width:100%;
+	max-width:1150px;
+	overflow:auto;
+	height:600px;
+	margin:0 auto;
+}
+
+iframe {
+	display:block;
+}
+
+/* End Academy iframe styles */
+
+/* Begin Certification Styles */
+
+.certification_test_container {
+	width:100%;
+	margin:20px auto;
+	font-family:"Helvetica Neue", Verdana, Arial, sans-serif !important;
+}
+
+.certification_test_container li {
+	font-size:20px;
+}
+
+.form-label-left{ width:150px !important; color:#333; font-family:"Helvetica Neue", Verdana, Arial, sans-serif !important;font-size:20px;} 
+.form-line{ padding-top:12px; padding-bottom:12px; } 
+.form-label-right{ width:150px !important; } 
+.form-all{ width:650px; color:#555 !important; 
+font-family:'Verdana'; font-size:12px; } 
+.form-radio-item label, 
+.form-checkbox-item label, 
+.form-grading-label, 
+.form-header{ color: #000 !important; font-family:"Helvetica Neue", Verdana, Arial, sans-serif !important;text-align:center;font-size:26px;}
+
+/*---ROUNDED INPUTS---*/
+.form-all input,select {height: 35px;
+font-family: Verdana, Arial, sans-serif;
+font-weight: normal;
+font-size: 18px;
+color: #000;
+padding: 0px 3px 0px 3px;
+background: #fefefe;
+border: 1px solid #ccc;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+-ms-border-radius: 4px;
+-khtml-border-radius: 4px;
+margin:10px auto;
+}
+
+.control-label {
+	font-size:16px;
+	color:#000;
+}
+
+.form-textarea {
+background: #f7f7f7;
+padding: 0px 3px 0px 3px;
+height: 125px;
+width: 623px;
+font-family: Verdana, Arial, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #333;
+border: 1px solid #ccc;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+-ms-border-radius: 4px;
+-khtml-border-radius: 4px;
+}
+.form-header-group {
+text-align: center;
+background: none !important;
+border-bottom: none !important;
+} /* Injected CSS Code */
+
+/* JP Custom Form Styles */
+
+.form-all {
+	width:100%;
+}
+
+.form-label-top {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	font-size:20px;
+	color:#333;
+}
+
+.form-radio-item label {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	font-size:18px;
+	color:#333 !important;	
+}
+
+.form-submit-button-light_rounded {
+	border-radius:5px !important;
+	border:1px solid transparent !important;
+	text-shadow:none !important;
+	padding:6px 12px !important;
+	color:#FFF !important;
+	background:#1abc9c !important;
+	box-shadow:none !important;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	font-size:16px !important;
+	font-weight:normal !important;
+	width:100px !important;
+	height:35px !important;
+	margin-right:30px !important;
+}
+
+.form-button-group {
+	display:block;
+	float:none;
+	margin:10px auto;
+	width:50%;
+}
+
+input[type="radio"]{
+	border:none !important;
+}
+
+.question_header {
+	margin-left:15px;
+}
+
+.radio {
+	margin-left:15px;
+}
+
+.question_button {
+	float:none;
+	display:block;
+	margin:10px auto;
+}
+
+.control-label:after {
+	content:"*";
+	color:red;
+}
+
+.form-inline {
+	margin:10px 0 10px 0;
+}
+
+.error_message_container {
+	font-size:18px;
+	font-weight:bold;
+	color:red;
+	text-align:center;
+	height:auto; /*vin*/ 
+}
+
+.success_message_container {
+	font-size:18px;
+	font-weight:bold;
+	color:green;
+	text-align:center;
+	height:auto; /*vin*/ 
+	width:50%;
+	margin:0 auto;
+}
+
+
+/* End Certification Styles */
+
+
+/*
+#lynco_menu img {
+	max-width:100%;
+	float:left;
+}
+*/
+
+/* End Lynco Nav Styles */
+
+/* Begin Menu Styles */
+
+/* Full Menu that is only displayed 
+when the screen width is above 960px */
+
+.full_menu 
+{
+	margin-top:120px;
+	margin-right:0px;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+
+nav {
+	margin:0 auto;
+	text-align:center;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display:block;
+}
+
+nav ul {
+	padding:0px;
+	list-style:none;
+	position:relative;
+	/* Don't use display:inline-table,
+	You will see borders */
+	/* Update June 2015: You can use 'display:inline-table'
+	but don't have a background in this selector
+	And then you won't see borders
+	'Display:inline-table' will center your ul elements; */
+	display: inline-block;
+	border:0px;
+	/* Use 'float:right' to have nav elements to the right side */
+
+}
+
+nav ul li {
+	float:left;
+	margin-top:0px;
+	padding:0px 45px;
+	margin-left:0px;
+}
+
+/*
+nav ul li:hover{
+	background:#27BCDD;
+}
+*/
+
+nav ul li a {
+	display:block;
+	/* Reduced padding here and added more to 
+	the nav ul li selector 
+	*/
+	padding:0 10px;
+	color:#FA9405;
+	text-decoration:none;
+	font-size:18px;
+	font-family:'EurostileNextW01-Regula', sans-serif;
+}
+
+nav ul li a:hover {
+	color:#4FB9A9;
+}
+
+nav ul ul {
+	background:#C0A361;
+	/* border-radius:5px; */
+	position:absolute;
+	top:20px;
+}
+
+nav ul ul li {
+	float:none;
+	border-bottom:1px solid #FFFFFF;
+	/* Reduce the padding for the hover elements */
+	padding:0;
+}
+
+nav ul ul li a {
+	padding:15px 20px;
+	color:#FFF;
+	text-align:center;
+}
+
+nav ul ul li a:hover {
+	background:#B37728;
+	color:#FFF;
+	/* border-radius:5px; */
+}
+
+nav ul ul ul {
+	position:absolute;
+	left:100%;
+	top:0;
+}
+
+/* Begin Custom Boostrap Navbar Styles */
+
+#nav-wrap {
+	display:none;
+}
+
+.container>.navbar-header {
+	margin:0 auto;
+	float:none;
+}
+
+.container {
+	width:100%;
+}
+
+.navbar-brand {
+	float:none !important;
+	margin:10px auto !important;
+	height:110px !important;
+	display:block;
+	max-width:350px;
+}
+
+.navbar-brand img {
+	width:100%;
+	height:auto;
+	/* max-width:350px; */ /* jeff -> Changed 2/3/16 */
+	max-width:470px; 
+	margin:0 auto; 	
+}
+
+#slidemenu {
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+
+.navbar-nav>li>a {
+	/* color:#d09854 !important; */
+	color:#b99362 !important; /* jeff -> Added 2/9/16 */
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	line-height:35px;
+	font-size:15px;
+	text-transform:uppercase;
+	padding:0 49px
+}
+
+.navbar-nav>li>a:hover {
+	color:#000 !important;
+	background-color:#FFF !important;
+}
+
+
+.navbar-default {
+	background-color:transparent !important;
+	background-image:none !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #d09854 !important;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	line-height:35px;
+	font-size:15px;
+	text-transform:uppercase;
+	padding:0 49px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #000 !important;
+}
+
+@media (min-width:768px) {
+	.pull-left {display:none !important;}
+}
+
+@media (min-width:768px) {
+.navbar-nav {margin: 0 auto !important;display: table;table-layout: fixed;float:none!important;}
+.navbar-collapse.collapse {border-top:1px solid #000 !important;
+	border-bottom:1px solid #000 !important;}
+}
+
+/* End Custom Boostrap Navbar Styles */
+
+
+
+/* End Menu Styles */
+
+.aetrex_logo_container {
+	display:block;
+	width:100%;
+	float:left;
+	height:120px;
+	overflow:hidden;
+}
+
+.aetrex_logo_container a {
+	display:block;
+	margin:0 auto;
+	width:350px;
+}
+
+.aetrex_logo_container img {
+	display:block;
+	margin:10px auto;
+	width:350px;
+	height:100px;
+}
+
+.aetrex_logo_container p {
+	font-size:24px;
+	clear:both;
+	text-align:center;
+	line-height:0.2;
+	margin-top:12px;
+	font-family:'Open Sans', sans-serif;
+}
+
+.teal_banner {
+	background-color:#4FB9A9;
+	height:35px;
+}
+
+.teal_banner img {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:7px;
+	
+}
+
+.orange_banner {
+	background-color:#BC7F2F;
+	height:45px;	
+	margin-top:-5px;
+}
+
+.orange_banner img {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:10px;
+}
+
+.teal_banner h1,
+.orange_banner h1 {
+	color:#FFF;
+	font-family:"Helvetica Neue", Verdana, Arial, sans-serif;
+	font-size:20px;
+	font-weight:200;
+	margin:0 auto;
+	text-align:center;
+	letter-spacing:6px;
+	line-height:2.0;
+	padding-top:0px;
+}
+
+/* Use this 'clearfloat' div for pushing your footer down */
+.clearfloat {
+	clear:both;
+}
+
+.footer {
+	display:block;
+	width:100%;
+	/* background-color:#303030; */ /* jeff -> Changed 2/8/16 */
+	background-color:#FFF;
+	border-top:1px solid #d1d1d1;
+	border-bottom:1px solid #d1d1d1;
+	margin-top:20px;
+	/* color:#FFF; */ /* jeff -> Changed 2/8/16 */
+	color:#b99362;
+	font-size:18px;
+	line-height:2.5;
+	letter-spacing:.1em;
+	overflow:hidden;
+}
+
+.footer .col-md-10 {
+	float:none;
+	margin:0 auto;
+}
+
+.footer .col-md-4 p {
+	/* background-color: #387EBF; */
+	/* color:#FFF; */ /* jeff -> Changed 2/8/16 */
+	color:#b99362;
+	width:75%;
+	text-transform:uppercase;
+	font-size:17px;
+	/* font-family:"Palatino LT W01 Roman"; */
+	line-height:1.5;
+	margin-top:20px;
+	/* padding-left:10px; */ /* jeff -> Changed 2/8/16 */
+}
+
+/*
+#home_footer {
+	background-color:#387EBF;
+}
+
+#follow_us_footer {
+	background-color:#3CBA4D;
+}
+*/
+
+.footer .col-md-4 li {
+	list-style:none;
+	/* font-family:"Palatino LT W01 Italic"; */
+	font-size:15px;
+	line-height:1.3em;
+}
+
+.footer .col-md-4 a {
+	display:block;
+	width:200px;
+}
+
+.footer .col-md-4 img {
+	width:200px;
+	height:60px;
+}
+
+/*
+#admin_footer {
+	background-color:#C2BF24;
+}
+*/
+
+.footer li a,
+.footer .col-md-4 span {
+	color:#333;
+	font-size:17px;
+	/* font-style:italic; */
+	/* font-family:"Palatino LT W01 Italic"; */
+	
+}
+
+.footer li a {
+	margin-bottom:5px;
+}
+
+.footer .col-md-4 span {
+	display:block;
+	margin-top:5px;
+}
+
+.footer li a:hover {
+	text-decoration:underline;
+}
+
+.footer .col-md-5 h1 {
+	display:inline-block;
+	clear:both;
+	float:left;
+}
+
+.circle_image_container {
+	float:left;
+}
+
+.circle_image_container a {
+	width:40px;
+}
+
+.circle_image_container img {
+	float:left;
+	margin-left:5px !important;
+	margin-top:20px !important;
+	width:40px !important;
+	height:40px !important;
+}
+
+/* Begin Bootstrap Responsive Menu Styles */
+
+/* adjust body when menu is open */
+body.slide-active {
+    overflow-x: hidden
+}
+/*first child of #page-content so it doesn't shift around*/
+.no-margin-top {
+    margin-top: 0px!important
+}
+/*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
+#page-content {
+    position: relative;
+    /* padding-top: 70px; */
+    padding-top:0;
+    left: 0;
+}
+#page-content.slide-active {
+    padding-top: 0
+}
+/* put toggle bars on the left :: not using button */
+#slide-nav .navbar-toggle {
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+    float: left;
+    margin: 0;
+    width: 30px;
+    height: 40px;
+    padding: 10px 0 0 0;
+    border: 0;
+    background: transparent;
+}
+/* icon bar prettyup - optional */
+#slide-nav .navbar-toggle > .icon-bar {
+    width: 100%;
+    display: block;
+    height: 3px;
+    margin: 5px 0 0 0;
+}
+#slide-nav .navbar-toggle.slide-active .icon-bar {
+    background: orange
+}
+.navbar-header {
+    position: relative
+}
+/* un fix the navbar when active so that all the menu items are accessible */
+.navbar.navbar-fixed-top.slide-active {
+    position: relative
+}
+/* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
+@media (max-width:767px) { 
+	#slide-nav .container {
+	    margin: 0;
+	    padding: 0!important;
+	}
+	#slide-nav .navbar-header {
+	    margin: 0 auto;
+	    padding: 0 15px;
+	}
+	#slide-nav .navbar.slide-active {
+	    position: absolute;
+	    width: 80%;
+	    top: -1px;
+	    z-index: 1000;
+	}
+	#slide-nav #slidemenu {
+	    /* background: #f7f7f7; */
+	    background:#303030;
+	    left: -100%;
+	    width: 80%;
+	    min-width: 0;
+	    position: absolute;
+	    padding-left: 0;
+	    z-index: 2;
+	    top: -8px;
+	    margin: 0;
+	}
+	#slide-nav #slidemenu .navbar-nav {
+	    min-width: 0;
+	    width: 100%;
+	    margin: 0;
+	    background:#eee; /* jeff -> Added 2/9/16 */
+	}
+	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+	    min-width: 0;
+	    width: 80%;
+	    white-space: normal;
+	}
+	#slide-nav {
+	    border-top: 0
+	}
+	#slide-nav.navbar-inverse #slidemenu {
+	    background: #333;
+	}
+	/* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
+	#slide-nav #navbar-height-col {
+	    position: fixed;
+	    top: 0;
+	    height: 100%;
+	    width: 80%;
+	    left: -80%;
+	    background: #eee; 
+	    /* background:#303030 */
+	}
+	#slide-nav.navbar-inverse #navbar-height-col {
+	    background: #333;
+	    z-index: 1;
+	    border: 0;
+	}
+	#slide-nav .navbar-form {
+	    width: 100%;
+	    margin: 8px 0;
+	    text-align: center;
+	    overflow: hidden;
+	    /*fast clearfixer*/
+	}
+	#slide-nav .navbar-form .form-control {
+	    text-align: center
+	}
+	#slide-nav .navbar-form .btn {
+	    width: 100%
+	}
+}
+@media (min-width:768px) { 
+	#page-content {
+	    left: 0!important
+	}
+	.navbar.navbar-fixed-top.slide-active {
+	    position: fixed
+	}
+	.navbar-header {
+	    left: 0!important
+	}
+}
+
+.icon-bar {
+	background:#000;
+}
+
+/* End Bootstrap Responsive Menu Styles */
+
+/* Bootstrap Table Styles */
+
+.users_table_column {
+	width:100%;
+	margin:10px auto;
+	font-size:14px;
+}
+
+.users_table_column h1 {
+	text-align:center;
+	font-size:28px;
+}
+
+#myTable th:hover {
+	cursor:pointer;
+	background-color:#1D6E32;
+	color:#FFF;
+} 
+
+#Store_Info_Header {
+	width:250px !important;
+}
+
+#myTable td {
+	width:130px;
+}
+
+.dataTables_info {
+	font-weight:bold;
+}
+
+.paginate_button {
+	margin-right:5px;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.paginate_button:hover {
+	cursor:pointer;
+}
+
+input[type=search] {
+	margin-left:10px;
+}
+
+#grey_box_submit {
+	display:none;
+	width:150px;
+	margin:0 auto;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	color:red;
+}
+
+select#UserState.form-control {
+	width:70%;
+	float:none;
+	margin:0;
+}
+
+input#UserStoreZip.form-control {
+	width:70%;
+}
+
+
+
+
+/* Begin Responsive Styles */
+
+@media screen and (min-width:1601px) and (max-width:1800px) {
+
+.aetrex_video {height:400px;margin-left:20px;}
+.academy_videos_container {margin-left:10px;width:30%;}
+/* .certification_video {height:340px;} */
+.screen_image_left {width:65%;margin-right:20px;margin-top:20px;height:480px;}
+.screen_image_right {/* width:25%; jeff-> Changed 2/3/16*/ width:30%;margin-left:20px;}
+.home_information_right_image_container img {height:412px;}
+
+}
+
+@media screen and (min-width:1360px) and (max-width:1600px) {
+
+.certification_video {height:340px;}
+.body_container {width:80%;}
+.screen_image_left {width:60%;}
+.aetrex_video {height:340px;margin-left:40px;}
+.academy_videos_container {margin-left:10px;width:35%;}
+.screen_image_right {width:30%;}
+.experts_image_right {width:18%;}
+#learn_more_text {margin-left:50px;width:140px;height:auto;}
+
+.ask_the_experts_button {margin-left:50px;}
+#certified_learn_more {width:150px;}
+#certified_geek_pin {width:200px;}
+.screen_image_right_image_container {width:323px;height:318px;}
+.home_information_left img {height:380px;}
+.home_information_right_image_container img {height:380px;}
+.grey_box_container {height:400px;}
+.grey_box_link_calendar {height:185px;margin-top:-380px;}
+.grey_box_link_calendar a {height:185px;}
+.grey_box_link_certification {height:185px;margin-top:14px;}
+.grey_box_link_certification a {height:185px;}
+
+.certified_fitter_start_here {width:220px;height:60px;display:block;margin-top:-100px;margin-right:55px;float:right;}
+.certified_fitter_start_here a {width:220px;height:60px;display:block;overflow:auto;position:relative;}
+
+}
+
+/* jeff -> Added this style for caption flags in video library */
+
+/*
+@media screen and (min-width:1300px) and (max-width:1450px) {
+
+.language_flags_container {display:block;margin:0 auto;overflow:auto;}
+.language_flags_container_row {margin:0 auto;width:70%;overflow:auto;}
+
+}
+*/
+
+@media screen and (min-width:1281px) and (max-width:1360px) {
+/* Will be filled in with most default values */
+#outterwrapper{width:100%;}
+#academy_menu {width:1050px;}
+.home_button {width:160px;}
+.about_us_button {width:160px;margin-left:-10px;}
+.educational_programs_button {width:233px;margin-left:-11px;}
+.certification_button {width:160px;margin-left:-10px;}
+.calendar_button {width:160px;margin-left:-10px;}
+.faq_button {width:160px;margin-left:-10px;}
+.contact_button {width:160px;margin-left:-10px;}
+a.home_darken {background-size:160px 38px; width:160px;height:38px;}
+a.about_us_darken {background-size:160px 38px; width:160px;height:38px;}
+a.educational_programs_darken {background-size:233px 38px; width:233px;height:38px;}
+a.certification_darken {background-size:160px 38px; width:160px;height:38px;}
+a.calendar_darken {background-size:160px 38px; width:160px;height:38px;}
+a.faq_darken {background-size:160px 38px; width:160px;height:38px;}
+a.contact_darken {background-size:160px 38px; width:160px;height:38px;}
+a.home_darken:hover {background-size:160px 38px; }
+a.about_us_darken:hover {background-size:160px 38px; }
+a.educational_programs_darken:hover {background-size:233px 38px; }
+a.certification_darken:hover {background-size:160px 38px; }
+a.calendar_darken:hover {background-repeat:no-repeat;background-size:160px 38px; }
+a.faq_darken:hover {background-size:160px 38px; }
+a.contact_darken:hover {background-size:160px 38px; }
+.academy_logo_container {max-width:1010px;}
+.screen_container {max-width:1050px;}
+.experts_container {max-width:1100px;}
+.calendar_container {max-width:1050px;height:600px;}
+
+
+.body_container {width:80%;}
+.academy_videos_container {margin-left:10px;}
+.academy_button {width:85%;}
+.aetrex_video {height:315px;margin-left:30px;}
+
+.certification_video {height:315px;}
+.screen_image_left {width:60%;height:450px;}
+.screen_image_right {width:30%;}
+
+.ask_the_experts_button {margin-left:50px;}
+#certified_learn_more {width:150px;}
+#certified_geek_pin {width:200px;}
+
+.home_information_left img {height:354px;}
+.home_information_right_image_container img {height:354px;}
+
+.certified_fitter_start_here {width:190px;height:50px;margin-top:-80px;margin-right:43px;}
+.certified_fitter_start_here a {width:190px;height:50px;}
+
+.grey_box_container {height:374px;}
+.grey_box_link_calendar {height:170px;margin-top:-354px;}
+.grey_box_link_calendar a {height:170px;}
+.grey_box_link_certification {height:170px;margin-top:14px;}
+.grey_box_link_certification a {height:170px;}
+
+.language_flags_container {display:block;margin:0 auto;overflow:auto;}
+.language_flags_container_row {margin:0 auto;width:75%;overflow:auto;}
+
+.language_captions_video {height:350px;width:525px;margin-left:30px;}
+
+}
+
+@media screen and (min-width:1200px) and (max-width:1280px) {
+#outterwrapper{width:100%;}
+#academy_menu {width:1050px;}
+.home_button {width:160px;}
+.about_us_button {width:160px;margin-left:-10px;}
+.educational_programs_button {width:233px;margin-left:-11px;}
+.certification_button {width:160px;margin-left:-10px;}
+.calendar_button {width:160px;margin-left:-10px;}
+.faq_button {width:160px;margin-left:-10px;}
+.contact_button {width:160px;margin-left:-10px;}
+a.home_darken {background-size:160px 38px; width:160px;height:38px;}
+a.about_us_darken {background-size:160px 38px; width:160px;height:38px;}
+a.educational_programs_darken {background-size:233px 38px; width:233px;height:38px;}
+a.certification_darken {background-size:160px 38px; width:160px;height:38px;}
+a.calendar_darken {background-size:160px 38px; width:160px;height:38px;}
+a.faq_darken {background-size:160px 38px; width:160px;height:38px;}
+a.contact_darken {background-size:160px 38px; width:160px;height:38px;}
+a.home_darken:hover {background-size:160px 38px; }
+a.about_us_darken:hover {background-size:160px 38px; }
+a.educational_programs_darken:hover {background-size:233px 38px; }
+a.certification_darken:hover {background-size:160px 38px; }
+a.calendar_darken:hover {background-repeat:no-repeat;background-size:160px 38px; }
+a.faq_darken:hover {background-size:160px 38px; }
+a.contact_darken:hover {background-size:160px 38px; }
+.academy_logo_container {max-width:1010px;}
+.screen_container {max-width:1050px;}
+.experts_container {max-width:1100px;}
+.calendar_container {max-width:1050px;height:600px;}
+
+/* Bootstrap Styles */
+
+/* .navbar-default .navbar-nav>li>a {padding:0 35px;} */
+.navbar-nav>li>a {padding:0 35px}
+.body_container {width:80%;}
+.academy_videos_container {margin-left:10px;}
+.academy_button {width:85%;}
+.screen_image_left {width:60%;}
+.screen_image_right {width:30%;}
+.aetrex_video {height:310px;margin-left:20px;}
+.certification_video {height:315px;}
+
+.ask_the_experts_button {margin-left:50px;}
+#certified_learn_more {width:140px;}
+#certified_geek_pin {width:180px;}
+
+.home_information_left img {height:354px;}
+.home_information_right_image_container img {height:354px;}
+
+.certified_fitter_start_here {width:170px;height:40px;margin-top:-70px;margin-right:40px;}
+.certified_fitter_start_here a {width:170px;height:40px;}
+
+.grey_box_container {height:374px;}
+.grey_box_link_calendar {height:170px;margin-top:-354px;}
+.grey_box_link_calendar a {height:170px;}
+.grey_box_link_certification {height:170px;margin-top:14px;}
+.grey_box_link_certification a {height:170px;}
+
+.language_flags_container {display:block;margin:0 auto;overflow:auto;}
+.language_flags_container_row {margin:0 auto;width:75%;overflow:auto;}
+
+.language_captions_video {height:350px;width:525px;margin-left:30px;}
+
+}
+
+@media screen and (min-width:1025px) and (max-width:1199px) {
+#outterwrapper{width:100%;}
+#academy_menu {width:900px;}
+.home_button {width:140px;}
+.about_us_button {width:140px;margin-left:-10px;}
+.educational_programs_button {width:204px;margin-left:-11px;}
+.certification_button {width:140px;margin-left:-10px;}
+.calendar_button {width:140px;margin-left:-10px;}
+.faq_button {width:140px;margin-left:-10px;}
+.contact_button {width:140px;margin-left:-10px;}
+a.home_darken {background-size:140px 33px; width:140px;height:33px;}
+a.about_us_darken {background-size:140px 33px; width:140px;height:33px;}
+a.educational_programs_darken {background-size:204px 34px; width:204px;height:34px;}
+a.certification_darken {background-size:140px 34px; width:140px;height:34px;}
+a.calendar_darken {background-size:140px 33px; width:140px;height:33px;}
+a.faq_darken {background-size:140px 33px; width:140px;height:33px;}
+a.contact_darken {background-size:140px 33px; width:140px;height:33px;}
+a.home_darken:hover {background-size:140px 33px; }
+a.about_us_darken:hover {background-size:140px 33px; }
+a.educational_programs_darken:hover {background-size:204px 34px; }
+a.certification_darken:hover {background-size:140px 33px; }
+a.calendar_darken:hover {background-repeat:no-repeat;background-size:140px 33px; }
+a.faq_darken:hover {background-size:140px 33px; }
+a.contact_darken:hover {background-size:140px 33px; }
+.academy_logo_container {max-width:950px;}
+.academy_logo_image_left {margin:10px auto;}
+.academy_logo_image_left img {width:505px;height:145px;margin:0 auto;}
+.academy_button {width:350px;}
+.screen_container {max-width:1050px;}
+/*
+.screen_image_left {background-size:450px 303px;height:360px;}
+.screen_image_right {width:35%;}
+.academy_videos_container {width:35%;}
+.aetrex_video { width:412px; height:276px; margin:0 auto;}
+*/
+.experts_container {max-width:1100px;}
+.experts_image_left {width:45%;}
+#geek_pin_image {margin-left:0px;}
+/* iframe {width:700px;height:525px;} */ /* jeff -> Changed 6/13/2016 */
+.calendar_container {max-width:1050px;height:525px;}
+
+/* Bootstrap Styles */
+
+/* .navbar-default .navbar-nav>li>a {padding:0 30px;} */
+.navbar-nav>li>a {padding:0 30px}
+
+/* new styles */
+/* jeff */
+
+.body_container {width:80%;}
+.academy_videos_container {margin-left:10px;width:35%;}
+.academy_button {width:90%;}
+.screen_image_left {width:62%;}
+.screen_image_right {width:30%;margin-left:15px;}
+/* .academy_videos_container {width:35%;} */
+.aetrex_video { height:280px; margin-left:5px;}
+.certification_video {height:280px;}
+
+.about_us_container {width:80%;}
+.about_us_image_container img {width:450px;}
+
+.contact_us_image_container img { width:600px;}
+
+.ask_the_experts_button {margin-left:50px;}
+.certified_buttons_container {width:45%;}
+#certified_learn_more {width:140px;}
+#certified_geek_pin {width:180px;}
+
+.screen_image_right_image_container {width:254px;height:250px;}
+.home_information_left img {height:295px;}
+.home_information_right_image_container img {height:295px;}
+
+.certified_fitter_start_here {width:170px;height:40px;margin-top:-70px;margin-right:40px;}
+.certified_fitter_start_here a {width:170px;height:40px;}
+
+.grey_box_container {height:315px;}
+.grey_box_link_calendar {height:142px;margin-top:-295px;}
+.grey_box_link_calendar a {height:142px;}
+.grey_box_link_certification {height:142px;margin-top:14px;}
+.grey_box_link_certification a {height:142px;}
+
+.language_flags_container {display:block;margin:0 auto;overflow:auto;}
+.language_flags_container_row {margin:0 auto;width:80%;overflow:auto;}
+
+.language_captions_video {height:320px;width:480px;margin-left:20px;}
+
+}
+
+@media screen and (min-width:992px) and (max-width:1024px) {
+/* Will be filled in with most default values */
+#outterwrapper{width:100%;}
+#academy_menu {width:750px;height:145px;}
+.home_button {width:200px;margin-left:55px;}
+.about_us_button {width:200px;margin-left:-10px;}
+.educational_programs_button {width:287px;margin-left:-11px;}
+.certification_button {width:200px;margin-left:-10px;}
+.calendar_button {width:200px;margin-left:90px;}
+.faq_button {width:200px;margin-left:-10px;}
+.contact_button {width:200px;margin-left:-10px;}
+a.home_darken {background-size:200px 47px; width:200px;height:47px;}
+a.about_us_darken {background-size:200px 47px; width:200px;height:47px;}
+a.educational_programs_darken {background-size:287px 47px; width:287px;height:47px;}
+a.certification_darken {background-size:200px 47px; width:200px;height:47px;}
+a.calendar_darken {background-size:200px 47px; width:200px;height:47px;}
+a.faq_darken {background-size:200px 47px; width:200px;height:47px;}
+a.contact_darken {background-size:200px 47px; width:200px;height:47px;}
+a.home_darken:hover {background-size:200px 47px; }
+a.about_us_darken:hover {background-size:200px 47px; }
+a.educational_programs_darken:hover {background-size:287px 47px; }
+a.certification_darken:hover {background-size:200px 47px; }
+a.calendar_darken:hover {background-repeat:no-repeat;background-size:200px 47px; }
+a.faq_darken:hover {background-size:200px 47px; }
+a.contact_darken:hover {background-size:200px 47px; }
+.academy_logo_container {max-width:950px;}
+.academy_logo_image_left {width:60%;margin:10px auto;}
+.academy_logo_image_left img {width:505px;height:145px;margin:0 auto;}
+.academy_logo_image_right {width:40%;margin-top:15px;}
+.screen_container {max-width:950px;}
+/* .screen_image_left {display:block;float:none;width:80%;margin:0 auto;} */
+.screen_image_right {float:none;width:50%;margin:15px auto;}
+/* .academy_videos_container {float:none;width:50%;margin:15px auto;} */
+.screen_image_right img {margin:0 auto;}
+.experts_container {max-width:950px;}
+.experts_image_left {width:40%;}
+.experts_image_right {width:25%;}
+/* iframe {width:700px;height:525px;} */ /* jeff -> Changed 6/13/2016 */
+.calendar_container {max-width:950px;height:525px;}
+
+/* Bootstrap Styles */
+
+/* .navbar-default .navbar-nav>li>a {padding:0 25px;} */
+.navbar-nav>li>a {padding:0 25px}
+
+.screen_image_left {width:100%;float:none;margin:0 auto;}
+.aetrex_video {height:315px;margin:0 auto;float:none;}
+.certification_video {height:315px;}
+.welcome_box {width:70%;}
+
+.academy_videos_container {width:100%;float:none;margin:15px auto;}
+.academy_button {width:90%;}
+
+.about_us_container {width:80%;}
+.about_us_image_container {width:100%;}
+.about_us_image_container img {width:450px;}
+.about_us_text_container {width:100%;}
+
+/* iframe {width:600px;height:450px;} */ /* jeff -> Changed 6/13/2016 */
+
+.contact_us_image_container img { width:600px;}
+
+.ask_the_experts_button {margin-left:30px;width:260px;}
+.certified_buttons_container {width:55%;}
+#certified_learn_more {width:140px;}
+#certified_geek_pin {width:180px;}
+
+.home_video_container {background-size:1250px 815px;}
+
+/* .video_library_grey_container {background-size:1250px 1120px;} */ /* jeff -> Changed 6/9/2016 */
+.video_library_grey_container {background-size:1250px 2400px;}
+
+.orange_banner img {width:80%;}
+.grey_box_container {height:auto;}
+/* .home_information_left {width:100%;} */ /* jeff -> Changed 2/10/2016 */
+
+.certified_fitter_start_here {width:130px;height:40px;margin-top:-60px;margin-right:35px;}
+.certified_fitter_start_here a {width:130px;height:40px;}
+
+.home_information_left {width:90%;float:none;display:block;}
+.home_information_left img {width:100%;height:auto;margin:0 auto;display:block;}
+
+.home_information_right {width:70%;margin:0 auto;float:none;display:block;clear:both;}
+/* .home_information_left img {height:295px;} */
+/* .home_information_right_image_container img {height:295px;} */
+
+.grey_box_link_calendar {height:210px;margin-top:-436px;}
+.grey_box_link_calendar a {height:210px;}
+.grey_box_link_certification {height:210px;margin-top:14px;}
+.grey_box_link_certification a {height:210px;}
+
+.audio_container {margin:20px auto;float:right;width:300px;}
+.audio_container audio {display:block;margin:0 auto;}
+#academy_audio_button {float:right;margin-right:60px;}
+
+.language_flags_container {display:block;margin:0 auto;overflow:auto;}
+.language_flags_container_row {margin:0 auto;width:45%;overflow:auto;}
+
+.language_captions_video {height:400px;}
+
+.captions_instructions { margin:0 auto; }
+
+}
+
+/* Extra range for Bootstrap Rows */
+
+@media screen and (min-width:961px) and (max-width:991px) {
+/* Will be filled in with most default values */
+#outterwrapper{width:100%;}
+#academy_menu {width:750px;height:145px;}
+.home_button {width:200px;margin-left:55px;}
+.about_us_button {width:200px;margin-left:-10px;}
+.educational_programs_button {width:287px;margin-left:-11px;}
+.certification_button {width:200px;margin-left:-10px;}
+.calendar_button {width:200px;margin-left:90px;}
+.faq_button {width:200px;margin-left:-10px;}
+.contact_button {width:200px;margin-left:-10px;}
+a.home_darken {background-size:200px 47px; width:200px;height:47px;}
+a.about_us_darken {background-size:200px 47px; width:200px;height:47px;}
+a.educational_programs_darken {background-size:287px 47px; width:287px;height:47px;}
+a.certification_darken {background-size:200px 47px; width:200px;height:47px;}
+a.calendar_darken {background-size:200px 47px; width:200px;height:47px;}
+a.faq_darken {background-size:200px 47px; width:200px;height:47px;}
+a.contact_darken {background-size:200px 47px; width:200px;height:47px;}
+a.home_darken:hover {background-size:200px 47px; }
+a.about_us_darken:hover {background-size:200px 47px; }
+a.educational_programs_darken:hover {background-size:287px 47px; }
+a.certification_darken:hover {background-size:200px 47px; }
+a.calendar_darken:hover {background-repeat:no-repeat;background-size:200px 47px; }
+a.faq_darken:hover {background-size:200px 47px; }
+a.contact_darken:hover {background-size:200px 47px; }
+.academy_logo_container {max-width:950px;}
+.academy_logo_image_left {width:60%;margin:10px auto;}
+.academy_logo_image_left img {width:505px;height:145px;margin:0 auto;}
+.academy_logo_image_right {width:40%;margin-top:15px;}
+.screen_container {max-width:950px;}
+
+/* .screen_image_left {display:block;float:none;width:80%;margin:0 auto;} */
+.screen_image_right {float:none;width:50%;margin:15px auto;}
+.screen_image_right img {margin:0 auto;}
+/* .academy_videos_container {float:none;width:50%;margin:15px auto;} */
+.experts_container {max-width:950px;}
+.experts_image_left {width:40%;}
+.experts_image_right {width:25%;}
+/* iframe {width:700px;height:525px;} */ /* jeff -> Changed 6/13/2016 */
+.calendar_container {max-width:950px;height:525px;}
+
+/* Bootstrap Styles */
+
+/* .navbar-default .navbar-nav>li>a {padding:0 25px;} */
+.navbar-nav>li>a {padding:0 25px}
+
+.screen_image_left {width:100%;float:none;margin:0 auto;}
+
+.aetrex_video {height:315px;float:none;margin:0 auto;}
+.certification_video {height:315px;}
+.welcome_box {width:70%;}
+
+.academy_videos_container {width:100%;float:none;margin:15px auto;}
+.academy_button {width:90%;}
+
+.contact_us_image_container img { width:600px;}
+
+.about_us_container {width:80%;}
+.about_us_image_container {width:100%;}
+.about_us_image_container img {width:450px;}
+.about_us_text_container {width:100%;}
+
+/* iframe {width:600px;height:450px;} */ /* jeff -> Changed 6/13/2016 */
+
+.ask_the_experts_button {margin-left:30px;width:250px;}
+.certified_buttons_container {width:55%;}
+#certified_learn_more {width:140px;}
+#certified_geek_pin {width:180px;}
+
+.home_video_container {background-size:1250px 815px;}
+.orange_banner img {width:80%;}
+.grey_box_container {height:auto;}
+/* .home_information_left {width:100%;} */ /* jeff -> Changed 2/10/2016 */
+
+.certified_fitter_start_here {width:130px;height:40px;margin-top:-60px;margin-right:35px;}
+.certified_fitter_start_here a {width:130px;height:40px;}
+
+.home_information_left {width:90%;float:none;display:block;}
+.home_information_left img {width:100%;height:auto;margin:0 auto;display:block;}
+
+.home_information_right {width:70%;margin:0 auto;float:none;display:block;clear:both;}
+
+#academy_text {width:322px;height:318px;}
+.grey_box_link_calendar {height:210px;margin-top:-423px;}
+.grey_box_link_calendar a {height:210px;}
+.grey_box_link_certification {height:210px;margin-top:14px;}
+.grey_box_link_certification a {height:210px;}
+
+.footer .col-md-4 p { margin: 20px auto;width:50%;text-align:center;padding-left:0;}
+.footer .col-md-4 a {margin:5px auto;}
+.footer .col-md-4 span {margin:5px auto;text-align:center;}
+.footer .col-md-4 li { text-align:center;}
+
+.audio_container {margin:20px auto;float:right;width:300px;}
+.audio_container audio {display:block;margin:0 auto;}
+#academy_audio_button {float:right;margin-right:60px;}
+
+.language_flags_container {display:block;margin:0 auto;overflow:auto;}
+.language_flags_container_row {margin:0 auto;width:45%;overflow:auto;}
+
+.language_captions_video {height:400px;width:600px;float:none;margin:0 auto;}
+
+.video_library_grey_container {background-size:1250px 2400px;}
+
+.captions_instructions { margin:0 auto; }
+
+}
+
+/* Tablet Width Responsive Styles */
+
+@media screen and (min-width:800px) and (max-width:960px) {
+/* Will be filled in with most default values */
+#outterwrapper{width:100%;}
+#academy_menu {width:720px;height:145px;}
+.home_button {width:200px;margin-left:20px;}
+.about_us_button {width:200px;margin-left:-10px;}
+.educational_programs_button {width:287px;margin-left:-11px;}
+.certification_button {width:200px;margin-left:-10px;}
+.calendar_button {width:200px;margin-left:55px;}
+.faq_button {width:200px;margin-left:-10px;}
+.contact_button {width:200px;margin-left:-10px;}
+a.home_darken {background-size:200px 47px; width:200px;height:47px;}
+a.about_us_darken {background-size:200px 47px; width:200px;height:47px;}
+a.educational_programs_darken {background-size:287px 47px; width:287px;height:47px;}
+a.certification_darken {background-size:200px 47px; width:200px;height:47px;}
+a.calendar_darken {background-size:200px 47px; width:200px;height:47px;}
+a.faq_darken {background-size:200px 47px; width:200px;height:47px;}
+a.contact_darken {background-size:200px 47px; width:200px;height:47px;}
+a.home_darken:hover {background-size:200px 47px; }
+a.about_us_darken:hover {background-size:200px 47px; }
+a.educational_programs_darken:hover {background-size:287px 47px; }
+a.certification_darken:hover {background-size:200px 47px; }
+a.calendar_darken:hover {background-repeat:no-repeat;background-size:200px 47px; }
+a.faq_darken:hover {background-size:200px 47px; }
+a.contact_darken:hover {background-size:200px 47px; }
+.academy_logo_container {max-width:950px;}
+.academy_logo_image_left {width:80%;margin:10px auto;}
+.academy_logo_image_left img {width:505px;height:145px;margin:0 auto;}
+.academy_logo_image_right {width:35%;margin-top:15px;}
+#online_istep_text {width:auto;height:auto;}
+.screen_container {max-width:950px;}
+/* .screen_image_left {display:block;float:none;width:100%;margin:0 auto;background-position:center;height:340px;} */ /* Jeff */
+/* .aetrex_video {width:476px;height:330px;margin:0 auto;display:block;} */
+/* .aetrex_video {width:690px;height:480px;margin:0 auto;display:block;} */
+.screen_image_right {float:none;width:50%;margin:15px auto;}
+.screen_image_right img {margin:0 auto;}
+/* .academy_videos_container {float:none;width:50%;margin:15px auto;} */
+.experts_container {max-width:950px;}
+.experts_image_left {width:45%;}
+#learn_more_text {width:156px;height:160px;margin-left:75px;}
+#geek_pin_image {width:200px;height:209px;margin-top:-12px;margin-left:15px;}
+.experts_image_right {width:30%;margin-left:10px;}
+/* iframe {width:700px;height:525px;} */ /* jeff -> Changed 6/13/2016 */
+.calendar_container {max-width:950px;height:525px;}
+
+/* Bootstrap Styles */
+
+/* .navbar-default .navbar-nav>li>a {padding:0 13px;} */
+.navbar-nav>li>a {padding:0 13px}
+
+.screen_image_left {width:100%;float:none;margin:0 auto;}
+
+.aetrex_video {height:315px;margin:0 auto;float:none;} /* Jeff */
+.certification_video {height:315px;}
+.welcome_box {width:70%;}
+
+.academy_videos_container {width:100%;float:none;margin:15px auto;}
+.academy_button {width:90%;}
+
+.about_us_container {width:80%;}
+.about_us_image_container {width:100%;}
+.about_us_image_container img {width:450px;}
+.about_us_text_container {width:100%;}
+
+/* iframe {width:550px;height:413px;} */ /* jeff -> Changed 6/13/2016 */
+
+.contact_us_image_container img { width:580px;}
+
+.ask_the_experts_button {margin-left:30px;width:230px;}
+.certified_buttons_container {width:55%;}
+#certified_learn_more {width:120px;}
+#certified_geek_pin {width:160px;}
+
+
+.home_video_container {background-size:1250px 815px;}
+/* .video_library_grey_container {background-size:1250px 1120px ;} */
+.video_library_grey_container {background-size:1250px 2400px ;}
+.orange_banner img {width:80%;}
+.grey_box_container {height:auto;}
+.home_information_left {width:100%;}
+.home_information_left img {width:546px;height:285px;margin:0 auto;float:none;display:block;}
+.home_information_right {width:80%;margin:0 auto;float:none;display:block;clear:both;}
+.home_information_right img {width:432px;height:375px;margin:0 auto;float:none;display:block;}
+
+.certified_fitter_start_here {width:100px;height:30px;margin-top:-50px;margin-right:28px;}
+.certified_fitter_start_here a {width:100px;height:30px;}
+
+#academy_text {width:322px;height:318px;}
+.grey_box_link_calendar {height:180px;margin-top:-375px;}
+.grey_box_link_calendar a {height:180px;}
+.grey_box_link_certification {height:180px;margin-top:14px;}
+.grey_box_link_certification a {height:180px;}
+
+.radio_container {font-size:18px;padding:5px 20px;}
+.success_message_container {width:80%;}
+
+.footer .col-md-4 p { margin: 20px auto;width:50%;text-align:center;padding-left:0;}
+.footer .col-md-4 a {margin:5px auto;}
+.footer .col-md-4 span {margin:5px auto;text-align:center;}
+.footer .col-md-4 li { text-align:center;}
+
+.audio_container {margin:20px auto;float:right;width:300px;}
+.audio_container audio {display:block;margin:0 auto;}
+#academy_audio_button {float:right;margin-right:60px;}
+
+.language_flags_container {display:block;margin:0 auto;overflow:auto;}
+.language_flags_container_row {margin:0 auto;width:45%;overflow:auto;}
+
+.language_captions_video {height:387px;width:580px;float:none;margin:0 auto;}
+
+.captions_instructions { margin:0 auto; }
+
+}
+
+@media screen and (min-width:768px) and (max-width:799px) {
+
+/* Will be filled in with most default values */
+#outterwrapper{width:100%;}
+#academy_menu {width:695px;height:215px;}
+.home_button {width:200px;margin-left:20px;}
+.about_us_button {width:200px;margin-left:-10px;}
+.educational_programs_button {width:287px;margin-left:-11px;}
+.certification_button {width:200px;margin-left:-10px;}
+.calendar_button {width:200px;margin-left:55px;}
+.faq_button {width:200px;margin-left:-10px;}
+.contact_button {width:200px;margin-left:-10px;}
+a.home_darken {background-size:200px 47px; width:200px;height:47px;}
+a.about_us_darken {background-size:200px 47px; width:200px;height:47px;}
+a.educational_programs_darken {background-size:287px 47px; width:287px;height:47px;}
+a.certification_darken {background-size:200px 47px; width:200px;height:47px;}
+a.calendar_darken {background-size:200px 47px; width:200px;height:47px;}
+a.faq_darken {background-size:200px 47px; width:200px;height:47px;}
+a.contact_darken {background-size:200px 47px; width:200px;height:47px;}
+a.home_darken:hover {background-size:200px 47px; }
+a.about_us_darken:hover {background-size:200px 47px; }
+a.educational_programs_darken:hover {background-size:287px 47px; }
+a.certification_darken:hover {background-size:200px 47px; }
+a.calendar_darken:hover {background-repeat:no-repeat;background-size:200px 47px; }
+a.faq_darken:hover {background-size:200px 47px; }
+a.contact_darken:hover {background-size:200px 47px; }
+.academy_logo_container {max-width:950px;}
+.academy_logo_image_left {width:80%;margin:10px auto;}
+.academy_logo_image_left img {width:505px;height:145px;margin:0 auto;}
+.academy_logo_image_right {width:35%;margin-top:15px;}
+#online_istep_text {width:auto;height:auto;}
+.screen_container {max-width:950px;}
+.screen_image_left {display:block;float:none;width:100%;margin:0 auto;background-position:center;height:430px;}
+.aetrex_video {width:476px;height:330px;margin:0 auto;display:block;}
+.screen_image_right {float:none;width:50%;margin:15px auto;}
+.screen_image_right img {margin:0 auto;}
+.academy_videos_container {float:none;width:50%;margin:15px auto;}
+.experts_container {max-width:950px;}
+
+.experts_image_left {width:40%;}
+.experts_image_left img {width:85%;}
+.certified_buttons_container {width:60%;}
+#certified_learn_more {width:140px;}
+#certified_geek_pin {width:190px;}
+
+
+#learn_more_text {width:156px;height:160px;margin-left:60px;}
+#geek_pin_image {width:200px;height:209px;margin-top:-12px;margin-left:15px;}
+.experts_image_right {width:30%;margin-left:5px;}
+/* iframe {width:500px;height:375px;} */ /* jeff -> Changed 6/13/2016 */
+.calendar_container {max-width:950px;height:375px;}
+
+/* .navbar-default .navbar-nav>li>a {padding:0 10px;} */
+.navbar-nav>li>a {padding:0 10px}
+
+.body_container {width:95%;}
+.home_video_container {background-size:1250px 815px;}
+.video_library_grey_container {background-size:1250px 4200px ;}
+.screen_image_left {width:100%;float:none;margin:0 auto;height:300px;}
+.orange_banner img {width:80%;}
+
+.aetrex_video {height:270px;margin:0 auto;float:none;} /* Jeff */
+.certification_video {height:270px;}
+.welcome_box {width:70%;}
+
+.about_us_text_container {width:100%;}
+.about_us_image_container, .contact_us_image_container {width:100%;display:block;float:none;}
+.about_us_image_container img, .contact_us_image_container img {width:100%;}
+
+.grey_box_container {height:auto;}
+.grey_box_link_calendar {width:73%;height:180px;margin-top:-375px;margin-left:auto;margin-right:auto;}
+.grey_box_link_calendar a {height:180px;}
+.grey_box_link_certification {width:73%;height:180px;margin-top:14px;margin-left:auto;margin-right:auto;}
+.grey_box_link_certification a {height:180px;}
+.home_information_left {width:100%;}
+.home_information_left img {width:546px;height:285px;margin:0 auto;float:none;display:block;}
+.home_information_right {width:80%;margin:0 auto;float:none;display:block;clear:both;}
+.home_information_right img {width:432px;height:375px;margin:0 auto;float:none;display:block;}
+
+.radio_container {font-size:18px;padding:5px 20px;}
+.success_message_container {width:80%;}
+
+.certified_fitter_container img {width:650px;display:block;height:auto;margin:0 auto;} 
+.certified_fitter_start_here {width:110px;height:30px;margin-top:-50px;margin-right:75px;}
+.certified_fitter_start_here a {width:110px;height:30px;}
+
+.academy_videos_container {width:100%;float:none;margin:15px auto;}
+.academy_button {width:90%;}
+
+.footer .col-md-4 p { margin: 20px auto;width:50%;text-align:center;padding-left:0;}
+.footer .col-md-4 a {margin:5px auto;}
+.footer .col-md-4 span {margin:5px auto;text-align:center;}
+.footer .col-md-4 li { text-align:center;}
+
+.audio_container {margin:20px auto;float:right;width:300px;}
+.audio_container audio {display:block;margin:0 auto;}
+#academy_audio_button {float:right;margin-right:60px;}
+
+.language_flags_container {display:block;margin:0 auto;overflow:auto;}
+.language_flags_container_row {margin:0 auto;width:45%;overflow:auto;}
+
+.language_captions_video {height:300px;width:450px;margin:0 auto;float:none;}
+
+.captions_instructions { margin:0 auto; }
+
+}
+
+@media screen and (min-width:600px) and (max-width:767px) {
+
+/* Will be filled in with most default values */
+#outterwrapper{width:100%;}
+#academy_menu {width:550px;height:295px;}
+.home_button {width:210px;margin-left:40px;}
+.about_us_button {width:210px;margin-left:40px;}
+.educational_programs_button {width:299px;margin-left:-11px;}
+.certification_button {width:210px;margin-left:40px;}
+.calendar_button {width:210px;margin-left:-9px;}
+.faq_button {width:210px;margin-left:40px;}
+.contact_button {width:210px;margin-left:-10px;}
+a.home_darken {background-size:210px 49px; width:210px;height:49px;}
+a.about_us_darken {background-size:210px 49px; width:210px;height:49px;}
+a.educational_programs_darken {background-size:299px 49px; width:299px;height:49px;}
+a.certification_darken {background-size:210px 49px; width:210px;height:49px;}
+a.calendar_darken {background-size:210px 49px; width:210px;height:49px;}
+a.faq_darken {background-size:210px 49px; width:210px;height:49px;}
+a.contact_darken {background-size:210px 49px; width:210px;height:49px;}
+a.home_darken:hover {background-size:210px 49px; }
+a.about_us_darken:hover {background-size:210px 49px; }
+a.educational_programs_darken:hover {background-size:299px 49px; }
+a.certification_darken:hover {background-size:210px 49px; }
+a.calendar_darken:hover {background-repeat:no-repeat;background-size:210px 49px; }
+a.faq_darken:hover {background-size:210px 49px; }
+a.contact_darken:hover {background-size:210px 49px; }
+.academy_logo_container {max-width:950px;}
+.academy_logo_image_left {width:100%;margin-left:75px;float:none;margin:0 auto;}
+.academy_logo_image_left img {width:500px;height:auto;margin:0 auto;}
+.academy_logo_image_right {width:100%;margin-top:15px;float:none;margin:0 auto;}
+#online_istep_text {width:450px;height:auto;margin:0 auto;}
+.screen_container {max-width:950px;}
+/* .screen_image_left {display:block;float:none;width:100%;margin:0 auto;background-position:center;height:430px;} */ /* jeff -> Changed 2/5/16 */
+/* .aetrex_video {width:476px;height:330px;margin:0 auto;display:block;} */ /* jeff -> Changed 2/5/16 */
+
+#certification_userfields_container{width:100%; height:auto; margin: auto; }
+
+.navbar-brand {float:none !important; margin-top:10px !important; margin-left:auto;margin-right:auto;height:52px !important;padding:0px 40px;} /* jeff -> Added 2/11/2016 */
+.navbar-brand img {width:200px; height:auto;} /* jeff -> Added 2/11/2016 */
+.navbar {margin-bottom:0;} /* jeff -> Added 2/11/2016 */
+.body_container {width:95%;margin:10px auto;} /* jeff -> Added 2/11/2016 */
+
+.screen_container {overflow:hidden;}
+.home_video_container {background-size:1250px 815px;}
+.video_library_grey_container {background-size:1250px 1370px ;}
+.screen_image_left {display:block;float:none;width:100%;margin:0 auto;background-position:center;height:300px;}
+.aetrex_video {height:270px;margin:0 auto;float:none;}
+
+.certification_video {height:270px;}
+.welcome_box {width:70%;}
+
+.orange_banner img {width:80%;padding-top:15px;}
+
+.grey_box_container {height:auto;}
+.grey_box_link_calendar {width:73%;height:180px;margin-top:-375px;margin-left:auto;margin-right:auto;}
+.grey_box_link_calendar a {height:180px;}
+.grey_box_link_certification {width:73%;height:180px;margin-top:14px;margin-left:auto;margin-right:auto;}
+.grey_box_link_certification a {height:180px;}
+.home_information_left {width:100%;}
+.home_information_left img {width:546px;height:285px;margin:0 auto;float:none;display:block;}
+.home_information_right {width:80%;margin:0 auto;float:none;display:block;clear:both;}
+.home_information_right img {width:432px;height:375px;margin:0 auto;float:none;display:block;}
+
+.radio_container {font-size:18px;padding:5px 20px;}
+.success_message_container {width:80%;}
+
+.screen_image_right {float:none;width:50%;margin:15px auto;}
+.screen_image_right img {margin:0 auto;}
+.academy_videos_container {float:none;width:70%;margin:15px auto;}
+.experts_container {max-width:950px;}
+.experts_image_left {width:100%;float:none;margin:0 auto;display:block;} /* jeff -> Changed 2/9/16 */
+#learn_more_text {width:120px;height:130px;margin-left:15px;}
+#geek_pin_image {width:160px;height:170px;margin-top:-12px;margin-left:0px;}
+.experts_image_right {width:25%;margin-left:20px;}
+iframe {width:500px;height:375px;}
+.calendar_container {max-width:950px;height:375px;}
+
+.experts_image_left {width:85%;}
+.ask_the_experts_button {margin:0 auto;}
+.experts_image_left img {width:85%;}
+.certified_buttons_container {width:80%;margin:20px auto;float:none;display:block;}
+#certified_learn_more {width:140px;}
+#certified_geek_pin {width:190px;}
+
+.about_us_text_container {width:100%;}
+.about_us_image_container, .contact_us_image_container {width:100%;display:block;float:none;}
+.about_us_image_container img, .contact_us_image_container img {width:100%;}
+
+.academy_about_us_text {height:auto;}
+.academy_contact_us_text {height:auto;}
+
+.certified_fitter_container img {width:600px;display:block;height:auto;margin:0 auto;} 
+.certified_fitter_start_here {width:110px;height:30px;margin-top:-50px;margin-right:45px;}
+.certified_fitter_start_here a {width:110px;height:30px;}
+
+.disclaimer_container {width:80%; margin:0 auto;float:none;}
+
+.footer .col-md-4 p { margin: 20px auto;width:50%;text-align:center;padding-left:0;}
+.footer .col-md-4 a {margin:5px auto;}
+.footer .col-md-4 span {margin:5px auto;text-align:center;}
+.footer .col-md-4 li { text-align:center;}
+
+.audio_container {margin:20px auto;float:right;width:300px;}
+.audio_container audio {display:block;margin:0 auto;}
+#academy_audio_button {float:right;margin-right:60px;}
+
+.language_captions_video {height:300px;width:450px;margin:0 auto;float:none;}
+
+.captions_instructions { margin:0 auto; }
+
+}
+
+/* Begin SmartPhone Width Responsive Styles */
+
+@media screen and (min-width:520px) and (max-width:599px) {
+
+/* Will be filled in with most default values */
+#outterwrapper{width:100%;}
+#academy_menu {width:100%;height:auto;}
+.home_button {width:210px;margin:0 auto;float:none;display:block;}
+.about_us_button {width:210px;margin:0 auto;float:none;display:block;}
+.educational_programs_button {width:299px;margin:0 auto;float:none;display:block;}
+.certification_button {width:210px;margin:0 auto;float:none;display:block;}
+.calendar_button {width:210px;margin:0 auto;float:none;display:block;}
+.faq_button {width:210px;margin:0 auto;float:none;display:block;}
+.contact_button {width:210px;margin:0 auto;float:none;display:block;}
+a.home_darken {background-size:210px 49px; width:210px;height:49px;}
+a.about_us_darken {background-size:210px 49px; width:210px;height:49px;}
+a.educational_programs_darken {background-size:299px 49px; width:299px;height:49px;}
+a.certification_darken {background-size:210px 49px; width:210px;height:49px;}
+a.calendar_darken {background-size:210px 49px; width:210px;height:49px;}
+a.faq_darken {background-size:210px 49px; width:210px;height:49px;}
+a.contact_darken {background-size:210px 49px; width:210px;height:49px;}
+a.home_darken:hover {background-size:210px 49px; }
+a.about_us_darken:hover {background-size:210px 49px; }
+a.educational_programs_darken:hover {background-size:299px 49px; }
+a.certification_darken:hover {background-size:210px 49px; }
+a.calendar_darken:hover {background-repeat:no-repeat;background-size:210px 49px; }
+a.faq_darken:hover {background-size:210px 49px; }
+a.contact_darken:hover {background-size:210px 49px; }
+.academy_logo_container {max-width:950px;}
+.academy_logo_image_left {width:100%;margin-left:75px;float:none;margin:0 auto;}
+.academy_logo_image_left img {width:500px;height:auto;margin:0 auto;}
+.academy_logo_image_right {width:100%;margin-top:15px;float:none;margin:0 auto;}
+#online_istep_text {width:450px;height:auto;margin:0 auto;}
+.screen_container {max-width:950px;}
+.screen_image_left {display:block;float:none;width:100%;margin:0 auto;background-position:center;background-size:450px 303px;height:430px;}
+.aetrex_video {width:410px;height:330px;margin:0 auto;display:block;}
+.screen_image_right {float:none;width:70%;margin:15px auto;}
+.screen_image_right img {margin:0 auto;}
+.academy_videos_container {float:none;width:80%;margin:15px auto;}
+.experts_container {max-width:950px;}
+.experts_image_left {width:100%;float:none;margin:20px auto;display:block;}
+.experts_image_left img {display:block;margin:0 auto;}
+#learn_more_text {width:120px;height:130px;margin-left:40px;}
+#geek_pin_image {width:160px;height:170px;margin-top:-12px;margin-left:0px;}
+.experts_image_right {width:35%;margin-left:50px;}
+iframe {width:400px;height:300px;}
+.calendar_container {max-width:950px;height:300px;}
+
+#certification_userfields_container{width:100%; height:auto; margin: auto; }
+
+.academy_about_us_text {height:auto;}
+.academy_contact_us_text {height:auto;}
+
+/* .navbar-default .navbar-nav>li>a {padding:0 10px;} */
+.navbar-nav>li>a {padding:0 10px}
+
+#user_form_container { width: 500px;height:auto; margin: auto;}
+.screen_container {overflow:hidden;}
+.disclaimer_container {width:80%; margin:0 auto;float:none;}
+
+.navbar-brand {float:none !important; margin-top:10px !important; margin-left:auto;margin-right:auto;height:52px !important;padding:0px 40px;} /* jeff -> Added 2/11/2016 */
+.navbar-brand img {width:200px; height:auto;} /* jeff -> Added 2/11/2016 */
+.navbar {margin-bottom:0;} /* jeff -> Added 2/11/2016 */
+.body_container {width:95%;margin:10px auto;}
+
+.home_video_container {background-size:1250px 815px;}
+.screen_image_left {width:100%;float:none;margin:0 auto;height:300px;}
+.orange_banner img {width:80%;padding-top:15px;}
+
+.aetrex_video {height:235px;margin:0 auto;float:none;} /* Jeff */
+.certification_video {height:270px;}
+.welcome_box {width:70%;}
+
+.radio_container {font-size:18px;padding:5px 20px;}
+#other {width:80%;}
+.radio {width:100%;}
+.success_message_container {width:80%;}
+
+.grey_box_container {height:auto;}
+.grey_box_link_calendar {width:91%;height:165px;margin-top:-347px;margin-left:auto;margin-right:auto;}
+.grey_box_link_calendar a {height:165px;}
+.grey_box_link_certification {width:91%;height:165px;margin-top:14px;margin-left:auto;margin-right:auto;}
+.grey_box_link_certification a {height:165px;}
+.home_information_left {width:80%;float:none;display:block;}
+.home_information_left img {width:450px;height:auto;margin:0 auto;float:none;display:block;}
+.home_information_right {width:80%;margin:0 auto;float:none;display:block;clear:both;}
+.home_information_right img {width:400px;height:auto;margin:0 auto;float:none;display:block;}
+
+.video_library_grey_container {background-size:1250px 1400px ;}
+
+.about_us_text_container {width:100%;}
+.about_us_image_container, .contact_us_image_container {width:100%;display:block;float:none;}
+.about_us_image_container img, .contact_us_image_container img {width:100%;}
+
+.experts_image_left {width:85%;}
+.ask_the_experts_button {margin:0 auto;}
+.experts_image_left img {width:85%;}
+.certified_buttons_container {width:80%;margin:20px auto;float:none;display:block;}
+#certified_learn_more {width:140px;}
+#certified_geek_pin {width:190px;}
+
+.academy_videos_container {width:100%;float:none;margin:15px auto;}
+/* .academy_button {width:90%;} */ /* jeff -> Changed 2/10/2016 */
+.academy_button {width:360px;}
+
+.certified_fitter_container img {width:500px;display:block;height:auto;margin:0 auto;} 
+.certified_fitter_start_here {width:95px;height:25px;margin-top:-40px;margin-right:20px;}
+.certified_fitter_start_here a {width:95px;height:25px;}
+
+.footer .col-md-4 p { margin: 20px auto;width:50%;text-align:center;padding-left:0;}
+.footer .col-md-4 a {margin:5px auto;}
+.footer .col-md-4 span {margin:5px auto;text-align:center;}
+.footer .col-md-4 li { text-align:center;}
+
+.audio_container {margin:20px auto;float:right;width:300px;}
+.audio_container audio {display:block;margin:0 auto;}
+#academy_audio_button {float:right;margin-right:60px;}
+
+.language_captions_video {height:300px;width:450px;margin:0 auto;float:none;}
+
+.captions_instructions { margin:0 auto; }
+
+}
+
+@media screen and (min-width:480px) and (max-width:519px) {
+
+/* Will be filled in with most default values */
+#outterwrapper{width:100%;}
+#academy_menu {width:100%;height:auto;}
+.home_button {width:210px;margin:0 auto;float:none;display:block;}
+.about_us_button {width:210px;margin:0 auto;float:none;display:block;}
+.educational_programs_button {width:299px;margin:0 auto;float:none;display:block;}
+.certification_button {width:210px;margin:0 auto;float:none;display:block;}
+.calendar_button {width:210px;margin:0 auto;float:none;display:block;}
+.faq_button {width:210px;margin:0 auto;float:none;display:block;}
+.contact_button {width:210px;margin:0 auto;float:none;display:block;}
+a.home_darken {background-size:210px 49px; width:210px;height:49px;}
+a.about_us_darken {background-size:210px 49px; width:210px;height:49px;}
+a.educational_programs_darken {background-size:299px 49px; width:299px;height:49px;}
+a.certification_darken {background-size:210px 49px; width:210px;height:49px;}
+a.calendar_darken {background-size:210px 49px; width:210px;height:49px;}
+a.faq_darken {background-size:210px 49px; width:210px;height:49px;}
+a.contact_darken {background-size:210px 49px; width:210px;height:49px;}
+a.home_darken:hover {background-size:210px 49px; }
+a.about_us_darken:hover {background-size:210px 49px; }
+a.educational_programs_darken:hover {background-size:299px 49px; }
+a.certification_darken:hover {background-size:210px 49px; }
+a.calendar_darken:hover {background-repeat:no-repeat;background-size:210px 49px; }
+a.faq_darken:hover {background-size:210px 49px; }
+a.contact_darken:hover {background-size:210px 49px; }
+.academy_logo_container {max-width:950px;}
+.academy_logo_image_left {width:100%;margin-left:75px;float:none;margin:0 auto;}
+.academy_logo_image_left img {width:500px;height:auto;margin:0 auto;}
+.academy_logo_image_right {width:100%;margin-top:15px;float:none;margin:0 auto;}
+#online_istep_text {width:450px;height:auto;margin:0 auto;}
+.screen_container {max-width:950px;}
+.screen_image_left {display:block;float:none;width:100%;margin:0 auto;background-position:center;background-size:300px 202px;height:430px;}
+.aetrex_video {width:275px;height:250px;margin:45px auto;display:block;}
+.screen_image_right {float:none;width:70%;margin:15px auto;}
+.screen_image_right img {margin:0 auto;}
+.academy_videos_container {float:none;width:80%;margin:15px auto;}
+.experts_container {max-width:950px;}
+.experts_image_left {width:100%;float:none;margin:20px auto;display:block;}
+.experts_image_left img {display:block;margin:0 auto;}
+#learn_more_text {width:120px;height:130px;margin-left:40px;}
+#geek_pin_image {width:160px;height:170px;margin-top:-12px;margin-left:0px;}
+.experts_image_right {width:35%;margin-left:50px;}
+iframe {width:400px;height:300px;}
+.calendar_container {max-width:950px;height:300px;}
+
+#certification_userfields_container{width:100%; height:auto; margin: auto; }
+
+.academy_button {width:350px;}
+.academy_about_us_text {height:auto;}
+.academy_contact_us_text {height:auto;}
+
+/* .navbar-default .navbar-nav>li>a {padding:0 10px;} */
+.navbar-nav>li>a {padding:0 10px}
+
+.navbar-brand {float:none !important; margin-top:10px !important; margin-left:auto;margin-right:auto;height:52px !important;padding:0px 40px;} /* jeff -> Added 2/11/2016 */
+.navbar-brand img {width:200px; height:auto;} /* jeff -> Added 2/11/2016 */
+.navbar {margin-bottom:0;} /* jeff -> Added 2/11/2016 */
+.body_container {width:95%;margin:10px auto;}
+.home_video_container {background-size:1250px 815px;}
+.screen_image_left {width:100%;float:none;margin:0 auto;height:300px;}
+.orange_banner img {width:80%;padding-top:15px;}
+
+.aetrex_video {height:200px;margin:0 auto;float:none;width:350px;} /* Jeff */
+.certification_video {height:270px;}
+.welcome_box {width:70%;}
+
+.radio_container {font-size:18px;padding:5px 20px;}
+#other {width:80%;}
+.radio {width:100%;}
+.success_message_container {width:80%;}
+
+.grey_box_container {height:auto;}
+.grey_box_link_calendar {width:91%;height:130px;margin-top:-273px;margin-left:auto;margin-right:auto;}
+.grey_box_link_calendar a {height:130px;}
+.grey_box_link_certification {width:91%;height:130px;margin-top:14px;margin-left:auto;margin-right:auto;}
+.grey_box_link_certification a {height:130px;}
+.home_information_left {width:80%;float:none;display:block;}
+.home_information_left img {width:350px;height:auto;margin:0 auto;float:none;display:block;}
+.home_information_right {width:80%;margin:0 auto;float:none;display:block;clear:both;}
+.home_information_right img {width:315px;height:auto;margin:0 auto;float:none;display:block;}
+
+.video_library_grey_container {background-size:1250px 1400px ;}
+
+.about_us_text_container {width:100%;}
+.about_us_image_container, .contact_us_image_container {width:100%;display:block;float:none;}
+.about_us_image_container img, .contact_us_image_container img {width:100%;}
+
+.experts_image_left {width:85%;}
+.ask_the_experts_button {margin:0 auto;}
+.experts_image_left img {width:85%;}
+.certified_buttons_container {width:80%;margin:20px auto;float:none;display:block;}
+#certified_learn_more {width:110px;}
+#certified_geek_pin {width:160px;}
+
+.academy_videos_container {width:100%;float:none;margin:15px auto;}
+/* .academy_button {width:90%;} */ /* jeff -> Changed 2/10/2016 */
+.academy_button {width:360px;}
+
+.certified_fitter_container img {width:450px;display:block;height:auto;margin:0 auto;} 
+.certified_fitter_start_here {width:95px;height:25px;margin-top:-40px;margin-right:20px;}
+.certified_fitter_start_here a {width:95px;height:25px;}
+
+.footer .col-md-4 p { margin: 20px auto;width:50%;text-align:center;padding-left:0;}
+.footer .col-md-4 a {margin:5px auto;}
+.footer .col-md-4 span {margin:5px auto;text-align:center;}
+.footer .col-md-4 li { text-align:center;}
+
+.audio_container {margin:20px auto;float:right;width:300px;}
+.audio_container audio {display:block;margin:0 auto;}
+#academy_audio_button {float:right;margin-right:60px;}
+
+.language_captions_video {height:280px;width:420px;margin:0 auto;float:none;}
+
+.captions_instructions { margin:0 auto; width:85%;}
+
+}
+
+@media screen and (min-width:320px) and (max-width:479px) {
+
+/* Will be filled in with most default values */
+#outterwrapper{width:100%;}
+#academy_menu {width:100%;height:auto;}
+.home_button {width:210px;margin:0 auto;float:none;display:block;}
+.about_us_button {width:210px;margin:0 auto;float:none;display:block;}
+.educational_programs_button {width:299px;margin:0 auto;float:none;display:block;}
+.certification_button {width:210px;margin:0 auto;float:none;display:block;}
+.calendar_button {width:210px;margin:0 auto;float:none;display:block;}
+.faq_button {width:210px;margin:0 auto;float:none;display:block;}
+.contact_button {width:210px;margin:0 auto;float:none;display:block;}
+a.home_darken {background-size:210px 49px; width:210px;height:49px;}
+a.about_us_darken {background-size:210px 49px; width:210px;height:49px;}
+a.educational_programs_darken {background-size:299px 49px; width:299px;height:49px;}
+a.certification_darken {background-size:210px 49px; width:210px;height:49px;}
+a.calendar_darken {background-size:210px 49px; width:210px;height:49px;}
+a.faq_darken {background-size:210px 49px; width:210px;height:49px;}
+a.contact_darken {background-size:210px 49px; width:210px;height:49px;}
+a.home_darken:hover {background-size:210px 49px; }
+a.about_us_darken:hover {background-size:210px 49px; }
+a.educational_programs_darken:hover {background-size:299px 49px; }
+a.certification_darken:hover {background-size:210px 49px; }
+a.calendar_darken:hover {background-repeat:no-repeat;background-size:210px 49px; }
+a.faq_darken:hover {background-size:210px 49px; }
+a.contact_darken:hover {background-size:210px 49px; }
+.academy_logo_container {max-width:950px;}
+.academy_logo_image_left {width:100%;margin-left:75px;float:none;margin:0 auto;}
+.academy_logo_image_left img {width:auto;height:auto;margin:0 auto;}
+.academy_logo_image_right {width:100%;margin-top:15px;float:none;margin:0 auto;}
+#online_istep_text {width:auto;height:auto;margin:0 auto;}
+.screen_container {max-width:950px;}
+.screen_image_left {display:block;float:none;width:100%;height:330px;margin:0 auto;background-position:center;background-size:300px 202px;}
+.aetrex_video {width:275px;height:180px;margin:41px auto;display:block;}
+.screen_image_right {float:none;width:85%;margin:0 auto;}
+.screen_image_right img {margin:0 auto;}
+.academy_videos_container {float:none;width:85%;margin:0 auto;}
+/* .academy_button {width:220px;height:70px;} */ /* jeff -> Changed 2/10/2016 */
+.academy_button {width:240px;height:70px;}
+.experts_container {max-width:950px;}
+.experts_image_left {width:100%;float:none;margin:20px auto;display:block;}
+.experts_image_left img {display:block;margin:0 auto;}
+#learn_more_text {width:120px;height:130px;margin:0 auto;}
+#geek_pin_image {width:160px;height:170px;margin:0 auto;}
+.experts_image_right {width:100%;float:none;margin-left:0;}
+iframe {width:280px;height:210px;}
+.calendar_container {max-width:950px;height:210px;}
+
+#certification_userfields_container{width:100%; height:auto; margin: auto; }
+
+.academy_about_us_text {height:auto;}
+.academy_contact_us_text {height:auto;}
+
+.radio_container {font-size:18px;padding:5px 20px;}
+#other {width:90%;}
+.radio {width:100%;}
+.success_message_container {width:80%;}
+
+/* .navbar-brand img {width:280px; height:auto;clear:both;} */ /* jeff -> Changed 2/11/2016 */
+
+.navbar-brand {float:none !important; margin-top:10px !important; margin-left:auto;margin-right:auto;height:52px !important;padding:0px 10px;width:160px;} /* jeff -> Added 2/11/2016 */
+.navbar-brand img {width:160px; height:auto;} /* jeff -> Added 2/11/2016 */
+.navbar {margin-bottom:0;} /* jeff -> Added 2/11/2016 */
+.body_container {width:95%;margin:10px auto;}
+.home_video_container {background-size:1250px 815px;}
+/* .screen_image_left {width:100%;float:none;margin:0 auto;height:170px;} */ /* jeff -> Changed 2/10/2016 */
+.screen_image_left {width:100%;float:none;margin:0 auto;height:200px;}
+.orange_banner img {width:80%;padding-top:15px;}
+.teal_banner img {width:80%;}
+
+.aetrex_video {height:165px;margin:0 auto;float:none;width:280px;} /* Jeff */
+.certification_video {height:180px;}
+.welcome_box {width:70%;}
+
+.grey_box_container {height:auto;}
+.grey_box_link_calendar {width:68%;height:118px;margin-top:-245px;margin-left:auto;margin-right:auto;}
+.grey_box_link_calendar a {height:118px;}
+.grey_box_link_certification {width:68%;height:118px;margin-top:10px;margin-left:auto;margin-right:auto;}
+.grey_box_link_certification a {height:118px;}
+.home_information_left {width:100%;float:none;display:block;}
+.home_information_left img {width:300px;height:auto;margin:0 auto;float:none;display:block;}
+.home_information_right {width:100%;margin:0 auto;float:none;display:block;clear:both;}
+.home_information_right img {width:280px;height:auto;margin:0 auto;float:none;display:block;}
+
+.academy_videos_container {width:100%;float:none;margin:15px auto;}
+/* .academy_button {width:90%;} */ /* jeff-> Changed 2/10/2016 */
+
+.video_library_grey_container {background-size:1250px 1450px ;}
+
+.about_us_text_container {width:100%;}
+.about_us_image_container, .contact_us_image_container {width:100%;display:block;float:none;}
+.about_us_image_container img, .contact_us_image_container img {width:100%;}
+
+.experts_image_left {width:100%;}
+.ask_the_experts_button {margin:0 auto;}
+.experts_image_left img {width:85%;}
+.certified_buttons_container {width:100%;margin:20px auto;float:none;display:block;}
+#certified_learn_more {width:90px;}
+#certified_geek_pin {width:140px;margin-top:-10px;}
+
+.certified_fitter_container img {width:100%;display:block;height:auto;margin:0 auto;} 
+.certified_fitter_start_here {display:none;}
+.certified_fitter_start_here a {display:none;}
+
+.footer .col-md-4 p { margin: 20px auto;width:50%;text-align:center;padding-left:0;}
+.footer .col-md-4 a {margin:5px auto;}
+.footer .col-md-4 span {margin:5px auto;text-align:center;}
+.footer .col-md-4 li { text-align:center;}
+
+.audio_container {margin:20px auto;float:right;width:300px;}
+.audio_container audio {display:block;margin:0 auto;}
+#academy_audio_button {float:right;margin-right:60px;}
+
+.language_captions_video {height:187px;width:280px;margin:0 auto;float:none;}
+
+.captions_instructions { margin:0 auto; }
+
+}
+
+@media screen and (min-width:275px) and (max-width:319px) {
+
+#outterwrapper{width:275px;}
+
+}
+
+/* End Responsive Styles */
